@@ -497,12 +497,6 @@ namespace BLToolkit.DataAccess
 		}
 
 		[NoInterception]
-		protected virtual System.Data.Linq.Binary ConvertToLinqBinary(DbManager db, object value, object parameter)
-		{
-			return db.MappingSchema.ConvertToLinqBinary(value);
-		}
-
-		[NoInterception]
 		protected virtual Decimal ConvertToDecimal(DbManager db, object value, object parameter)
 		{
 			return db.MappingSchema.ConvertToDecimal(value);

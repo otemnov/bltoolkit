@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.Linq;
 using System.Globalization;
 using System.Reflection;
 
@@ -246,23 +245,14 @@ namespace BLToolkit.Data.Linq
 		[SqlFunction(ServerSideOnly = true)]
 		public static bool Like(string matchExpression, string pattern)
 		{
-#if SILVERLIGHT
-			throw new InvalidOperationException();
-#else
-			return matchExpression == null || pattern == null ? false : System.Data.Linq.SqlClient.SqlMethods.Like(matchExpression, pattern);
-#endif
+			//TODO: impl client side
+			return matchExpression == null || pattern == null ? false : false; //System.Data.Linq.SqlClient.SqlMethods.Like(matchExpression, pattern);
 		}
 
 		[SqlFunction(ServerSideOnly = true)]
 		public static bool Like(string matchExpression, string pattern, char? escapeCharacter)
 		{
-#if SILVERLIGHT
-			throw new InvalidOperationException();
-#else
-			return matchExpression == null || pattern == null || escapeCharacter == null ?
-				false :
-				System.Data.Linq.SqlClient.SqlMethods.Like(matchExpression, pattern, escapeCharacter.Value);
-#endif
+			return matchExpression == null || pattern == null || escapeCharacter == null ? false : false;
 		}
 
 		[SqlFunction]
@@ -444,24 +434,6 @@ namespace BLToolkit.Data.Linq
 		public static string Upper(string str)
 		{
 			return str == null ? null : str.ToUpper();
-		}
-
-		#endregion
-
-		#region Binary Functions
-
-		[SqlFunction(                             PreferServerSide = true)]
-		[SqlFunction("Access",    "Len",          PreferServerSide = true)]
-		[SqlFunction("Firebird",  "Octet_Length", PreferServerSide = true)]
-		[SqlFunction("MsSql2000", "DataLength",   PreferServerSide = true)]
-		[SqlFunction("MsSql2005", "DataLength",   PreferServerSide = true)]
-		[SqlFunction("MsSql2008", "DataLength",   PreferServerSide = true)]
-		[SqlFunction("MsSql2012", "DataLength",   PreferServerSide = true)]
-		[SqlFunction("SqlCe",     "DataLength",   PreferServerSide = true)]
-		[SqlFunction("Sybase",    "DataLength",   PreferServerSide = true)]
-		public static int? Length(Binary value)
-		{
-			return value == null ? null : (int?)value.Length;
 		}
 
 		#endregion

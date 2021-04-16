@@ -5,7 +5,6 @@
 // </auto-generated>
 //---------------------------------------------------------------------------------------------------
 using System;
-using System.Data.Linq;
 using System.Data.SqlTypes;
 using System.Globalization;
 using System.IO;
@@ -27,98 +26,96 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Byte       p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Byte       p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Decimal    p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Decimal    p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Double     p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Double     p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Int16      p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Int16      p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Int32      p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Int32      p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Int64      p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Int64      p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(SByte      p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(SByte      p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Single     p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(Single     p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(String     p) { return p == null? Configuration.NullableValues.Boolean : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p);       }
+		public static Boolean ToBoolean(String     p) { return p == null? Configuration.NullableValues.Boolean : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p); }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(UInt16     p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(UInt16     p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(UInt32     p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(UInt32     p) { return p != 0;                                                                                               }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(UInt64     p) { return p != 0;                                                                                                     }
+		public static Boolean ToBoolean(UInt64     p) { return p != 0;                                                                                               }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Boolean?   p) { return p.HasValue && p.Value;                                                                                      }
+		public static Boolean ToBoolean(Boolean?   p) { return p.HasValue && p.Value;                                                                                }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Byte?      p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Byte?      p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Char?      p) { return p.HasValue && ToBoolean(p.Value);                                                                           }
+		public static Boolean ToBoolean(Char?      p) { return p.HasValue && ToBoolean(p.Value);                                                                     }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Decimal?   p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Decimal?   p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Double?    p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Double?    p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Int16?     p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Int16?     p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Int32?     p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Int32?     p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Int64?     p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Int64?     p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(SByte?     p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(SByte?     p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Single?    p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(Single?    p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(UInt16?    p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(UInt16?    p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(UInt32?    p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(UInt32?    p) { return p.HasValue && p.Value != 0;                                                                           }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Boolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean ToBoolean(UInt64?    p) { return p.HasValue && p.Value != 0;                                                                                 }
+		public static Boolean ToBoolean(UInt64?    p) { return p.HasValue && p.Value != 0;                                                                           }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Boolean : BitConverter.ToBoolean(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Boolean : BitConverter.ToBoolean(p, 0);           }
+		public static Boolean ToBoolean(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Boolean : BitConverter.ToBoolean(p, 0);     }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlBoolean p) { return !p.IsNull && p.Value;                                                                                       }
+		public static Boolean ToBoolean(SqlBoolean p) { return !p.IsNull && p.Value;                                                                                 }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlByte    p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlByte    p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlDecimal p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlDecimal p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlDouble  p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlDouble  p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlInt16   p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlInt16   p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlInt32   p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlInt32   p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlInt64   p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlInt64   p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlMoney   p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlMoney   p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlSingle  p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlSingle  p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Boolean</c> value.</summary>
-		public static Boolean ToBoolean(SqlString  p) { return !p.IsNull && ToBoolean(p.Value);                                                                            }
+		public static Boolean ToBoolean(SqlString  p) { return !p.IsNull && ToBoolean(p.Value);                                                                      }
 
 #endif
 
@@ -173,7 +170,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToBoolean((Binary)    p);
 			if (p is Byte[])     return ToBoolean((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -208,100 +204,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Boolean    p) { return p ? (Byte)1 : (Byte)0;                                                           }
+		public static Byte ToByte(Boolean    p) { return p ? (Byte)1 : (Byte)0;                                                   }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Char       p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Char       p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Decimal    p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Decimal    p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Double     p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Double     p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Int16      p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Int16      p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Int32      p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Int32      p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Int64      p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Int64      p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(SByte      p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(SByte      p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Single     p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(Single     p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(String     p) { return p == null? Configuration.NullableValues.Byte : Byte.Parse(p);                    }
+		public static Byte ToByte(String     p) { return p == null? Configuration.NullableValues.Byte : Byte.Parse(p);            }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(UInt16     p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(UInt16     p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(UInt32     p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(UInt32     p) { return checked((Byte)p);                                                        }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(UInt64     p) { return checked((Byte)p);                                                                }
+		public static Byte ToByte(UInt64     p) { return checked((Byte)p);                                                        }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Boolean?   p) { return p.HasValue && p.Value ? (Byte)1: (Byte)0;                                        }
+		public static Byte ToByte(Boolean?   p) { return p.HasValue && p.Value ? (Byte)1: (Byte)0;                                }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Byte;                        }
+		public static Byte ToByte(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Byte;                }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Char?      p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Char?      p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Decimal?   p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Decimal?   p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Double?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Double?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Int16?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Int16?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Int32?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Int32?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Int64?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Int64?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(SByte?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(SByte?     p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Single?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(Single?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(UInt16?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(UInt16?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(UInt32?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(UInt32?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Byte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte ToByte(UInt64?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte;         }
+		public static Byte ToByte(UInt64?    p) { return p.HasValue ? checked((Byte)p.Value) : Configuration.NullableValues.Byte; }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Byte : p.ToArray()[0]; }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Byte : p[0];           }
+		public static Byte ToByte(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Byte : p[0];   }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Byte : p.Value;                          }
+		public static Byte ToByte(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Byte : p.Value;                  }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Byte</c> value.</summary>
-		public static Byte ToByte(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);                  }
+		public static Byte ToByte(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Byte : ToByte(p.Value);          }
 
 #endif
 
@@ -356,7 +350,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToByte((Binary)    p);
 			if (p is Byte[])     return ToByte((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -391,100 +384,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Boolean    p) { return p ? (Char)1 : (Char)0;                                                                                }
+		public static Char ToChar(Boolean    p) { return p ? (Char)1 : (Char)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Byte       p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Byte       p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Decimal    p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Decimal    p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Double     p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Double     p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Int16      p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Int16      p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Int32      p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Int32      p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Int64      p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Int64      p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(SByte      p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(SByte      p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Single     p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(Single     p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(String     p) { return string.IsNullOrEmpty(p)? (Char)0 : p[0];                                                              }
+		public static Char ToChar(String     p) { return string.IsNullOrEmpty(p)? (Char)0 : p[0];                                                    }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(UInt16     p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(UInt16     p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(UInt32     p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(UInt32     p) { return checked((Char)p);                                                                           }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(UInt64     p) { return checked((Char)p);                                                                                     }
+		public static Char ToChar(UInt64     p) { return checked((Char)p);                                                                           }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Boolean?   p) { return p.HasValue && p.Value ? (Char)1: (Char)0;                                                             }
+		public static Char ToChar(Boolean?   p) { return p.HasValue && p.Value ? (Char)1: (Char)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Byte?      p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Byte?      p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Char?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Char;                                             }
+		public static Char ToChar(Char?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Char;                                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Decimal?   p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Decimal?   p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Double?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Double?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Int16?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Int16?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Int32?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Int32?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Int64?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Int64?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(SByte?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(SByte?     p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Single?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(Single?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(UInt16?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(UInt16?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(UInt32?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(UInt32?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Char</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char ToChar(UInt64?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                              }
+		public static Char ToChar(UInt64?    p) { return p.HasValue ? checked((Char)p.Value) : Configuration.NullableValues.Char;                    }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Char : BitConverter.ToChar(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Char : BitConverter.ToChar(p, 0);           }
+		public static Char ToChar(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Char : BitConverter.ToChar(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Char</c> value.</summary>
-		public static Char ToChar(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                                       }
+		public static Char ToChar(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Char : ToChar(p.Value);                             }
 
 #endif
 
@@ -539,7 +530,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToChar((Binary)    p);
 			if (p is Byte[])     return ToChar((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -599,8 +589,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>DateTime</c> value.</summary>
-		public static DateTime ToDateTime(Binary          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.DateTime : DateTime.FromBinary(ToInt64(p.ToArray()));   }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>DateTime</c> value.</summary>
 		public static DateTime ToDateTime(Byte[]          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.DateTime : DateTime.FromBinary(ToInt64(p));             }
 
@@ -657,7 +645,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToDateTime((Binary)         p);
 			if (p is Byte[])          return ToDateTime((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -686,48 +673,46 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(DateTime        p) { return p;                                                                                                  }
+		public static DateTimeOffset ToDateTimeOffset(DateTime        p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(Double          p) { return DateTimeOffset.MinValue + TimeSpan.FromDays (p);                                                    }
+		public static DateTimeOffset ToDateTimeOffset(Double          p) { return DateTimeOffset.MinValue + TimeSpan.FromDays (p);                                              }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(Int64           p) { return DateTimeOffset.MinValue + TimeSpan.FromTicks(p);                                                    }
+		public static DateTimeOffset ToDateTimeOffset(Int64           p) { return DateTimeOffset.MinValue + TimeSpan.FromTicks(p);                                              }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(String          p) { return p == null? DateTimeOffset.MinValue : DateTimeOffset.Parse(p);                                       }
+		public static DateTimeOffset ToDateTimeOffset(String          p) { return p == null? DateTimeOffset.MinValue : DateTimeOffset.Parse(p);                                 }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(TimeSpan        p) { return DateTimeOffset.MinValue + p;                                                                        }
+		public static DateTimeOffset ToDateTimeOffset(TimeSpan        p) { return DateTimeOffset.MinValue + p;                                                                  }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(DateTime?       p) { return p.HasValue ?                                   p.Value : DateTimeOffset.MinValue;                   }
+		public static DateTimeOffset ToDateTimeOffset(DateTime?       p) { return p.HasValue ?                                   p.Value : DateTimeOffset.MinValue;             }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(DateTimeOffset? p) { return p.HasValue ? p.Value : DateTimeOffset.MinValue;                                                     }
+		public static DateTimeOffset ToDateTimeOffset(DateTimeOffset? p) { return p.HasValue ? p.Value : DateTimeOffset.MinValue;                                               }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(Double?         p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value): DateTimeOffset.MinValue;        }
+		public static DateTimeOffset ToDateTimeOffset(Double?         p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value): DateTimeOffset.MinValue;  }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(Int64?          p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value): DateTimeOffset.MinValue;        }
+		public static DateTimeOffset ToDateTimeOffset(Int64?          p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value): DateTimeOffset.MinValue;  }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(TimeSpan?       p) { return p.HasValue ? DateTimeOffset.MinValue +                    p.Value : DateTimeOffset.MinValue;        }
+		public static DateTimeOffset ToDateTimeOffset(TimeSpan?       p) { return p.HasValue ? DateTimeOffset.MinValue +                    p.Value : DateTimeOffset.MinValue;  }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(Binary          p) { return p == null || p.Length == 0 ? DateTimeOffset.MinValue : new DateTimeOffset(ToDateTime(p.ToArray())); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(Byte[]          p) { return p == null || p.Length == 0 ? DateTimeOffset.MinValue : new DateTimeOffset(ToDateTime(p));           }
+		public static DateTimeOffset ToDateTimeOffset(Byte[]          p) { return p == null || p.Length == 0 ? DateTimeOffset.MinValue : new DateTimeOffset(ToDateTime(p));     }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(SqlDateTime     p) { return p.IsNull   ? DateTimeOffset.MinValue :                                   p.Value;                   }
+		public static DateTimeOffset ToDateTimeOffset(SqlDateTime     p) { return p.IsNull   ? DateTimeOffset.MinValue :                                   p.Value;             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(SqlDouble       p) { return p.IsNull   ? DateTimeOffset.MinValue : DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value);       }
+		public static DateTimeOffset ToDateTimeOffset(SqlDouble       p) { return p.IsNull   ? DateTimeOffset.MinValue : DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value); }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(SqlInt64        p) { return p.IsNull   ? DateTimeOffset.MinValue : DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value);       }
+		public static DateTimeOffset ToDateTimeOffset(SqlInt64        p) { return p.IsNull   ? DateTimeOffset.MinValue : DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value); }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>DateTimeOffset</c> value.</summary>
-		public static DateTimeOffset ToDateTimeOffset(SqlString       p) { return p.IsNull   ? DateTimeOffset.MinValue :                  ToDateTimeOffset(p.Value);                  }
+		public static DateTimeOffset ToDateTimeOffset(SqlString       p) { return p.IsNull   ? DateTimeOffset.MinValue :                  ToDateTimeOffset(p.Value);            }
 
 #endif
 
@@ -770,7 +755,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToDateTimeOffset((Binary)         p);
 			if (p is Byte[])          return ToDateTimeOffset((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -938,7 +922,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToDecimal((Binary)    p);
 			if (p is Byte[])     return ToDecimal((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -973,114 +956,112 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Boolean         p) { return p ? (Double)1 : (Double)0;                                                                                }
+		public static Double ToDouble(Boolean         p) { return p ? (Double)1 : (Double)0;                                                                        }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Byte            p) { return p;                                                                                                        }
+		public static Double ToDouble(Byte            p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Char            p) { return p;                                                                                                        }
+		public static Double ToDouble(Char            p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(DateTime        p) { return (p - DateTime.MinValue).TotalDays;                                                                        }
+		public static Double ToDouble(DateTime        p) { return (p - DateTime.MinValue).TotalDays;                                                                }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(DateTimeOffset  p) { return (p - DateTimeOffset.MinValue).TotalDays;                                                                  }
+		public static Double ToDouble(DateTimeOffset  p) { return (p - DateTimeOffset.MinValue).TotalDays;                                                          }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Decimal         p) { return checked((Double)p);                                                                                       }
+		public static Double ToDouble(Decimal         p) { return checked((Double)p);                                                                               }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Int16           p) { return p;                                                                                                        }
+		public static Double ToDouble(Int16           p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Int32           p) { return p;                                                                                                        }
+		public static Double ToDouble(Int32           p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Int64           p) { return p;                                                                                                        }
+		public static Double ToDouble(Int64           p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(SByte           p) { return p;                                                                                                        }
+		public static Double ToDouble(SByte           p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Single          p) { return p;                                                                                                        }
+		public static Double ToDouble(Single          p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(String          p) { return p == null? Configuration.NullableValues.Double : Double.Parse(p);                                         }
+		public static Double ToDouble(String          p) { return p == null? Configuration.NullableValues.Double : Double.Parse(p);                                 }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(TimeSpan        p) { return p.TotalDays;                                                                                              }
+		public static Double ToDouble(TimeSpan        p) { return p.TotalDays;                                                                                      }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(UInt16          p) { return p;                                                                                                        }
+		public static Double ToDouble(UInt16          p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(UInt32          p) { return p;                                                                                                        }
+		public static Double ToDouble(UInt32          p) { return p;                                                                                                }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(UInt64          p) { return p;                                                                                                        }
+		public static Double ToDouble(UInt64          p) { return p;                                                                                                }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Boolean?        p) { return p.HasValue && p.Value ? (Double)1: (Double)0;                                                             }
+		public static Double ToDouble(Boolean?        p) { return p.HasValue && p.Value ? (Double)1: (Double)0;                                                     }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Byte?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Byte?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Char?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Char?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).TotalDays : Configuration.NullableValues.Double;               }
+		public static Double ToDouble(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).TotalDays : Configuration.NullableValues.Double;       }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTimeOffset.MinValue).TotalDays : Configuration.NullableValues.Double;         }
+		public static Double ToDouble(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTimeOffset.MinValue).TotalDays : Configuration.NullableValues.Double; }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Decimal?        p) { return p.HasValue ? checked((Double)p.Value) : Configuration.NullableValues.Double;                              }
+		public static Double ToDouble(Decimal?        p) { return p.HasValue ? checked((Double)p.Value) : Configuration.NullableValues.Double;                      }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Double?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Double?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Int16?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Int16?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Int32?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Int32?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Int64?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Int64?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(SByte?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(SByte?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Single?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(Single?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(TimeSpan?       p) { return p.HasValue ? p.Value.TotalDays : Configuration.NullableValues.Double;                                     }
+		public static Double ToDouble(TimeSpan?       p) { return p.HasValue ? p.Value.TotalDays : Configuration.NullableValues.Double;                             }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(UInt16?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(UInt16?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(UInt32?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(UInt32?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Double</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double ToDouble(UInt64?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                               }
+		public static Double ToDouble(UInt64?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Double;                                       }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Binary          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Double : BitConverter.ToDouble(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(Byte[]          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Double : BitConverter.ToDouble(p, 0);           }
+		public static Double ToDouble(Byte[]          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Double : BitConverter.ToDouble(p, 0);   }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlBoolean      p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                                       }
+		public static Double ToDouble(SqlBoolean      p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlByte         p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                                 }
+		public static Double ToDouble(SqlByte         p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlDateTime     p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                                       }
+		public static Double ToDouble(SqlDateTime     p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlDecimal      p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                                       }
+		public static Double ToDouble(SqlDecimal      p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlDouble       p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                                 }
+		public static Double ToDouble(SqlDouble       p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlInt16        p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                                 }
+		public static Double ToDouble(SqlInt16        p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlInt32        p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                                 }
+		public static Double ToDouble(SqlInt32        p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlInt64        p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                                 }
+		public static Double ToDouble(SqlInt64        p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlMoney        p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                                       }
+		public static Double ToDouble(SqlMoney        p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlSingle       p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                                 }
+		public static Double ToDouble(SqlSingle       p) { return p.IsNull ? Configuration.NullableValues.Double : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Double</c> value.</summary>
-		public static Double ToDouble(SqlString       p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                                       }
+		public static Double ToDouble(SqlString       p) { return p.IsNull ? Configuration.NullableValues.Double : ToDouble(p.Value);                               }
 
 #endif
 
@@ -1144,7 +1125,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToDouble((Binary)         p);
 			if (p is Byte[])          return ToDouble((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -1180,32 +1160,30 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(String    p) { return p == null ? Configuration.NullableValues.Guid : new Guid(p);           }
+		public static Guid ToGuid(String    p) { return p == null ? Configuration.NullableValues.Guid : new Guid(p);         }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Guid?</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(Guid?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Guid;              }
+		public static Guid ToGuid(Guid?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Guid;            }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(Binary    p) { return p == null ? Configuration.NullableValues.Guid : new Guid(p.ToArray()); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(Byte[]    p) { return p == null ? Configuration.NullableValues.Guid : new Guid(p);           }
+		public static Guid ToGuid(Byte[]    p) { return p == null ? Configuration.NullableValues.Guid : new Guid(p);         }
 		/// <summary>Converts the value from <c>Type</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(Type      p) { return p == null ? Configuration.NullableValues.Guid : p.GUID;                }
+		public static Guid ToGuid(Type      p) { return p == null ? Configuration.NullableValues.Guid : p.GUID;              }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBinary</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(SqlBinary p) { return p.IsNull  ? Configuration.NullableValues.Guid : p.ToSqlGuid().Value;   }
+		public static Guid ToGuid(SqlBinary p) { return p.IsNull  ? Configuration.NullableValues.Guid : p.ToSqlGuid().Value; }
 		/// <summary>Converts the value from <c>SqlGuid</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(SqlGuid   p) { return p.IsNull ? Configuration.NullableValues.Guid : p.Value;                }
+		public static Guid ToGuid(SqlGuid   p) { return p.IsNull ? Configuration.NullableValues.Guid : p.Value;              }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Guid</c> value.</summary>
-		public static Guid ToGuid(SqlString p) { return p.IsNull  ? Configuration.NullableValues.Guid : new Guid(p.Value);     }
+		public static Guid ToGuid(SqlString p) { return p.IsNull  ? Configuration.NullableValues.Guid : new Guid(p.Value);   }
 
 #endif
 
@@ -1237,7 +1215,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)    return ToGuid((Binary)   p);
 			if (p is Byte[])    return ToGuid((Byte[])   p);
 			if (p is Type)      return ToGuid((Type)     p);
 
@@ -1264,100 +1241,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Boolean    p) { return p ? (Int16)1 : (Int16)0;                                                                                }
+		public static Int16 ToInt16(Boolean    p) { return p ? (Int16)1 : (Int16)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Byte       p) { return p;                                                                                                      }
+		public static Int16 ToInt16(Byte       p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Char       p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(Char       p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Decimal    p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(Decimal    p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Double     p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(Double     p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Int32      p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(Int32      p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Int64      p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(Int64      p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(SByte      p) { return p;                                                                                                      }
+		public static Int16 ToInt16(SByte      p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Single     p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(Single     p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(String     p) { return p == null? Configuration.NullableValues.Int16 : Int16.Parse(p);                                         }
+		public static Int16 ToInt16(String     p) { return p == null? Configuration.NullableValues.Int16 : Int16.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(UInt16     p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(UInt16     p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(UInt32     p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(UInt32     p) { return checked((Int16)p);                                                                            }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(UInt64     p) { return checked((Int16)p);                                                                                      }
+		public static Int16 ToInt16(UInt64     p) { return checked((Int16)p);                                                                            }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Boolean?   p) { return p.HasValue && p.Value ? (Int16)1: (Int16)0;                                                             }
+		public static Int16 ToInt16(Boolean?   p) { return p.HasValue && p.Value ? (Int16)1: (Int16)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int16;                                              }
+		public static Int16 ToInt16(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int16;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Char?      p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(Char?      p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Decimal?   p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(Decimal?   p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Double?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(Double?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Int16?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int16;                                              }
+		public static Int16 ToInt16(Int16?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int16;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Int32?     p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(Int32?     p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Int64?     p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(Int64?     p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int16;                                              }
+		public static Int16 ToInt16(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int16;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Single?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(Single?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(UInt16?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(UInt16?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(UInt32?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(UInt32?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Int16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16 ToInt16(UInt64?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                              }
+		public static Int16 ToInt16(UInt64?    p) { return p.HasValue ? checked((Int16)p.Value) : Configuration.NullableValues.Int16;                    }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int16 : BitConverter.ToInt16(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int16 : BitConverter.ToInt16(p, 0);           }
+		public static Int16 ToInt16(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int16 : BitConverter.ToInt16(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Int16 : p.Value;                                                }
+		public static Int16 ToInt16(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Int16 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Int16 : p.Value;                                                }
+		public static Int16 ToInt16(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Int16 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Int16</c> value.</summary>
-		public static Int16 ToInt16(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                                       }
+		public static Int16 ToInt16(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Int16 : ToInt16(p.Value);                             }
 
 #endif
 
@@ -1412,7 +1387,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToInt16((Binary)    p);
 			if (p is Byte[])     return ToInt16((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -1447,100 +1421,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Boolean    p) { return p ? (Int32)1 : (Int32)0;                                                                                }
+		public static Int32 ToInt32(Boolean    p) { return p ? (Int32)1 : (Int32)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Byte       p) { return p;                                                                                                      }
+		public static Int32 ToInt32(Byte       p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Char       p) { return p;                                                                                                      }
+		public static Int32 ToInt32(Char       p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Decimal    p) { return checked((Int32)p);                                                                                      }
+		public static Int32 ToInt32(Decimal    p) { return checked((Int32)p);                                                                            }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Double     p) { return checked((Int32)p);                                                                                      }
+		public static Int32 ToInt32(Double     p) { return checked((Int32)p);                                                                            }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Int16      p) { return p;                                                                                                      }
+		public static Int32 ToInt32(Int16      p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Int64      p) { return checked((Int32)p);                                                                                      }
+		public static Int32 ToInt32(Int64      p) { return checked((Int32)p);                                                                            }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(SByte      p) { return p;                                                                                                      }
+		public static Int32 ToInt32(SByte      p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Single     p) { return checked((Int32)p);                                                                                      }
+		public static Int32 ToInt32(Single     p) { return checked((Int32)p);                                                                            }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(String     p) { return p == null? Configuration.NullableValues.Int32 : Int32.Parse(p);                                         }
+		public static Int32 ToInt32(String     p) { return p == null? Configuration.NullableValues.Int32 : Int32.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(UInt16     p) { return p;                                                                                                      }
+		public static Int32 ToInt32(UInt16     p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(UInt32     p) { return checked((Int32)p);                                                                                      }
+		public static Int32 ToInt32(UInt32     p) { return checked((Int32)p);                                                                            }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(UInt64     p) { return checked((Int32)p);                                                                                      }
+		public static Int32 ToInt32(UInt64     p) { return checked((Int32)p);                                                                            }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Boolean?   p) { return p.HasValue && p.Value ? (Int32)1: (Int32)0;                                                             }
+		public static Int32 ToInt32(Boolean?   p) { return p.HasValue && p.Value ? (Int32)1: (Int32)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                              }
+		public static Int32 ToInt32(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Char?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                              }
+		public static Int32 ToInt32(Char?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Decimal?   p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                              }
+		public static Int32 ToInt32(Decimal?   p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Double?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                              }
+		public static Int32 ToInt32(Double?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Int16?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                              }
+		public static Int32 ToInt32(Int16?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Int32?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                              }
+		public static Int32 ToInt32(Int32?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Int64?     p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                              }
+		public static Int32 ToInt32(Int64?     p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                              }
+		public static Int32 ToInt32(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Single?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                              }
+		public static Int32 ToInt32(Single?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                              }
+		public static Int32 ToInt32(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int32;                                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(UInt32?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                              }
+		public static Int32 ToInt32(UInt32?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Int32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32 ToInt32(UInt64?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                              }
+		public static Int32 ToInt32(UInt64?    p) { return p.HasValue ? checked((Int32)p.Value) : Configuration.NullableValues.Int32;                    }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int32 : BitConverter.ToInt32(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int32 : BitConverter.ToInt32(p, 0);           }
+		public static Int32 ToInt32(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int32 : BitConverter.ToInt32(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Int32 : p.Value;                                                }
+		public static Int32 ToInt32(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Int32 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Int32 : p.Value;                                                }
+		public static Int32 ToInt32(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Int32 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Int32 : p.Value;                                                }
+		public static Int32 ToInt32(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Int32 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Int32</c> value.</summary>
-		public static Int32 ToInt32(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                                       }
+		public static Int32 ToInt32(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Int32 : ToInt32(p.Value);                             }
 
 #endif
 
@@ -1595,7 +1567,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToInt32((Binary)    p);
 			if (p is Byte[])     return ToInt32((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -1630,114 +1601,112 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Boolean         p) { return p ? (Int64)1 : (Int64)0;                                                                                }
+		public static Int64 ToInt64(Boolean         p) { return p ? (Int64)1 : (Int64)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Byte            p) { return p;                                                                                                      }
+		public static Int64 ToInt64(Byte            p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Char            p) { return p;                                                                                                      }
+		public static Int64 ToInt64(Char            p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(DateTime        p) { return (p - DateTime.MinValue).Ticks;                                                                          }
+		public static Int64 ToInt64(DateTime        p) { return (p - DateTime.MinValue).Ticks;                                                                }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(DateTimeOffset  p) { return (p - DateTime.MinValue).Ticks;                                                                          }
+		public static Int64 ToInt64(DateTimeOffset  p) { return (p - DateTime.MinValue).Ticks;                                                                }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Decimal         p) { return checked((Int64)p);                                                                                      }
+		public static Int64 ToInt64(Decimal         p) { return checked((Int64)p);                                                                            }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Double          p) { return checked((Int64)p);                                                                                      }
+		public static Int64 ToInt64(Double          p) { return checked((Int64)p);                                                                            }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Int16           p) { return p;                                                                                                      }
+		public static Int64 ToInt64(Int16           p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Int32           p) { return p;                                                                                                      }
+		public static Int64 ToInt64(Int32           p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(SByte           p) { return p;                                                                                                      }
+		public static Int64 ToInt64(SByte           p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Single          p) { return checked((Int64)p);                                                                                      }
+		public static Int64 ToInt64(Single          p) { return checked((Int64)p);                                                                            }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(String          p) { return p == null? Configuration.NullableValues.Int64 : Int64.Parse(p);                                         }
+		public static Int64 ToInt64(String          p) { return p == null? Configuration.NullableValues.Int64 : Int64.Parse(p);                               }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(TimeSpan        p) { return p.Ticks;                                                                                                }
+		public static Int64 ToInt64(TimeSpan        p) { return p.Ticks;                                                                                      }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(UInt16          p) { return p;                                                                                                      }
+		public static Int64 ToInt64(UInt16          p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(UInt32          p) { return p;                                                                                                      }
+		public static Int64 ToInt64(UInt32          p) { return p;                                                                                            }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(UInt64          p) { return checked((Int64)p);                                                                                      }
+		public static Int64 ToInt64(UInt64          p) { return checked((Int64)p);                                                                            }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Boolean?        p) { return p.HasValue && p.Value ? (Int64)1: (Int64)0;                                                             }
+		public static Int64 ToInt64(Boolean?        p) { return p.HasValue && p.Value ? (Int64)1: (Int64)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Byte?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(Byte?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Char?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(Char?           p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(DateTime?       p) { return   p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                                                 }
+		public static Int64 ToInt64(DateTime?       p) { return   p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                                       }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(DateTimeOffset? p) { return   p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                                                 }
+		public static Int64 ToInt64(DateTimeOffset? p) { return   p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                                       }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Decimal?        p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                              }
+		public static Int64 ToInt64(Decimal?        p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Double?         p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                              }
+		public static Int64 ToInt64(Double?         p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Int16?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(Int16?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Int32?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(Int32?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Int64?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(Int64?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(SByte?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(SByte?          p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Single?         p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                              }
+		public static Int64 ToInt64(Single?         p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                    }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(TimeSpan?       p) { return p.HasValue ? p.Value.Ticks : 0;                                                                         }
+		public static Int64 ToInt64(TimeSpan?       p) { return p.HasValue ? p.Value.Ticks : 0;                                                               }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(UInt16?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(UInt16?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(UInt32?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                              }
+		public static Int64 ToInt64(UInt32?         p) { return p.HasValue ? p.Value : Configuration.NullableValues.Int64;                                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Int64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64 ToInt64(UInt64?         p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                              }
+		public static Int64 ToInt64(UInt64?         p) { return p.HasValue ? checked((Int64)p.Value) : Configuration.NullableValues.Int64;                    }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Binary          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int64 : BitConverter.ToInt64(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(Byte[]          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int64 : BitConverter.ToInt64(p, 0);           }
+		public static Int64 ToInt64(Byte[]          p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Int64 : BitConverter.ToInt64(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlBoolean      p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlBoolean      p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlByte         p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                                }
+		public static Int64 ToInt64(SqlByte         p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlDateTime     p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlDateTime     p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlDecimal      p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlDecimal      p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlDouble       p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlDouble       p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlInt16        p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                                }
+		public static Int64 ToInt64(SqlInt16        p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlInt32        p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                                }
+		public static Int64 ToInt64(SqlInt32        p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlInt64        p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                                }
+		public static Int64 ToInt64(SqlInt64        p) { return p.IsNull ? Configuration.NullableValues.Int64 : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlMoney        p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlMoney        p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlSingle       p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlSingle       p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Int64</c> value.</summary>
-		public static Int64 ToInt64(SqlString       p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                                       }
+		public static Int64 ToInt64(SqlString       p) { return p.IsNull ? Configuration.NullableValues.Int64 : ToInt64(p.Value);                             }
 
 #endif
 
@@ -1801,7 +1770,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToInt64((Binary)         p);
 			if (p is Byte[])          return ToInt64((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -1838,94 +1806,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Boolean    p) { return p ? (SByte)1 : (SByte)0;                                                                          }
+		public static SByte ToSByte(Boolean    p) { return p ? (SByte)1 : (SByte)0;                                                                }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Byte       p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Byte       p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Char       p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Char       p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Decimal    p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Decimal    p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Double     p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Double     p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Int16      p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Int16      p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Int32      p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Int32      p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Int64      p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Int64      p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Single     p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(Single     p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(String     p) { return p == null? Configuration.NullableValues.SByte : SByte.Parse(p);                                   }
+		public static SByte ToSByte(String     p) { return p == null? Configuration.NullableValues.SByte : SByte.Parse(p);                         }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(UInt16     p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(UInt16     p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(UInt32     p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(UInt32     p) { return checked((SByte)p);                                                                      }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(UInt64     p) { return checked((SByte)p);                                                                                }
+		public static SByte ToSByte(UInt64     p) { return checked((SByte)p);                                                                      }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Boolean?   p) { return p.HasValue && p.Value ? (SByte)1: (SByte)0;                                                       }
+		public static SByte ToSByte(Boolean?   p) { return p.HasValue && p.Value ? (SByte)1: (SByte)0;                                             }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Byte?      p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Byte?      p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Char?      p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Char?      p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Decimal?   p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Decimal?   p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Double?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Double?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Int16?     p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Int16?     p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Int32?     p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Int32?     p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Int64?     p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Int64?     p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.SByte;                                        }
+		public static SByte ToSByte(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.SByte;                              }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Single?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(Single?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(UInt16?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(UInt16?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(UInt32?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(UInt32?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(UInt64?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;                        }
+		public static SByte ToSByte(UInt64?    p) { return p.HasValue ? checked((SByte)p.Value) : Configuration.NullableValues.SByte;              }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SByte</c> value.</summary>
-		[CLSCompliant(false)]
-		public static SByte ToSByte(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.SByte : checked((SByte)p.ToArray()[0]); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.SByte : checked((SByte)p[0]);           }
+		public static SByte ToSByte(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.SByte : checked((SByte)p[0]); }
 
 #if !SILVERLIGHT
 
@@ -1933,34 +1898,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte ToSByte(SqlString  p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                                 }
+		public static SByte ToSByte(SqlString  p) { return p.IsNull ? Configuration.NullableValues.SByte : ToSByte(p.Value);                       }
 
 #endif
 
@@ -2016,7 +1981,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSByte((Binary)    p);
 			if (p is Byte[])     return ToSByte((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -2051,100 +2015,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Boolean    p) { return p ? (Single)1 : (Single)0;                                                                                }
+		public static Single ToSingle(Boolean    p) { return p ? (Single)1 : (Single)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Byte       p) { return p;                                                                                                        }
+		public static Single ToSingle(Byte       p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Char       p) { return p;                                                                                                        }
+		public static Single ToSingle(Char       p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Decimal    p) { return checked((Single)p);                                                                                       }
+		public static Single ToSingle(Decimal    p) { return checked((Single)p);                                                                             }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Double     p) { return checked((Single)p);                                                                                       }
+		public static Single ToSingle(Double     p) { return checked((Single)p);                                                                             }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Int16      p) { return p;                                                                                                        }
+		public static Single ToSingle(Int16      p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Int32      p) { return p;                                                                                                        }
+		public static Single ToSingle(Int32      p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Int64      p) { return p;                                                                                                        }
+		public static Single ToSingle(Int64      p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(SByte      p) { return p;                                                                                                        }
+		public static Single ToSingle(SByte      p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(String     p) { return p == null? Configuration.NullableValues.Single : Single.Parse(p);                                         }
+		public static Single ToSingle(String     p) { return p == null? Configuration.NullableValues.Single : Single.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(UInt16     p) { return p;                                                                                                        }
+		public static Single ToSingle(UInt16     p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(UInt32     p) { return p;                                                                                                        }
+		public static Single ToSingle(UInt32     p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(UInt64     p) { return p;                                                                                                        }
+		public static Single ToSingle(UInt64     p) { return p;                                                                                              }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Boolean?   p) { return p.HasValue && p.Value ? (Single)1: (Single)0;                                                             }
+		public static Single ToSingle(Boolean?   p) { return p.HasValue && p.Value ? (Single)1: (Single)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Char?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(Char?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Decimal?   p) { return p.HasValue ? checked((Single)p.Value) : Configuration.NullableValues.Single;                              }
+		public static Single ToSingle(Decimal?   p) { return p.HasValue ? checked((Single)p.Value) : Configuration.NullableValues.Single;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Double?    p) { return p.HasValue ? checked((Single)p.Value) : Configuration.NullableValues.Single;                              }
+		public static Single ToSingle(Double?    p) { return p.HasValue ? checked((Single)p.Value) : Configuration.NullableValues.Single;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Int16?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(Int16?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Int32?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(Int32?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Int64?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(Int64?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(SByte?     p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Single?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(Single?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(UInt32?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(UInt32?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Single</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single ToSingle(UInt64?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                               }
+		public static Single ToSingle(UInt64?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.Single;                                     }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Single : BitConverter.ToSingle(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Single : BitConverter.ToSingle(p, 0);           }
+		public static Single ToSingle(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.Single : BitConverter.ToSingle(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                                       }
+		public static Single ToSingle(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                                 }
+		public static Single ToSingle(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                                       }
+		public static Single ToSingle(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                                       }
+		public static Single ToSingle(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                                 }
+		public static Single ToSingle(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                                 }
+		public static Single ToSingle(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                                 }
+		public static Single ToSingle(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                                       }
+		public static Single ToSingle(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                                 }
+		public static Single ToSingle(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.Single : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Single</c> value.</summary>
-		public static Single ToSingle(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                                       }
+		public static Single ToSingle(SqlString  p) { return p.IsNull ? Configuration.NullableValues.Single : ToSingle(p.Value);                             }
 
 #endif
 
@@ -2199,7 +2161,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSingle((Binary)    p);
 			if (p is Byte[])     return ToSingle((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -2315,8 +2276,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>String</c> value.</summary>
-		public static String ToString(Binary          p) { return ToString(p.ToArray());                                                                                 }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>String</c> value.</summary>
 		public static String ToString(Byte[]          p) { return p == null ? Configuration.NullableValues.String : System.Text.Encoding.UTF8.GetString(p, 0, p.Length); }
 		/// <summary>Converts the value from <c>Type</c> to an equivalent <c>String</c> value.</summary>
@@ -2424,7 +2383,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToString((Binary)         p);
 			if (p is Byte[])          return ToString((Byte[])         p);
 			if (p is Type)            return ToString((Type)           p);
 
@@ -2468,48 +2426,46 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(DateTime        p) { return p - DateTime.MinValue;                                                                                        }
+		public static TimeSpan ToTimeSpan(DateTime        p) { return p - DateTime.MinValue;                                                                              }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(DateTimeOffset  p) { return p - DateTimeOffset.MinValue;                                                                                  }
+		public static TimeSpan ToTimeSpan(DateTimeOffset  p) { return p - DateTimeOffset.MinValue;                                                                        }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(Double          p) { return TimeSpan.FromDays (p);                                                                                        }
+		public static TimeSpan ToTimeSpan(Double          p) { return TimeSpan.FromDays (p);                                                                              }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(Int64           p) { return TimeSpan.FromTicks(p);                                                                                        }
+		public static TimeSpan ToTimeSpan(Int64           p) { return TimeSpan.FromTicks(p);                                                                              }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(String          p) { return p == null? Configuration.NullableValues.TimeSpan : TimeSpan.Parse(p);                                         }
+		public static TimeSpan ToTimeSpan(String          p) { return p == null? Configuration.NullableValues.TimeSpan : TimeSpan.Parse(p);                               }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(DateTime?       p) { return p.HasValue ? p.Value - DateTime.MinValue       : Configuration.NullableValues.TimeSpan;                       }
+		public static TimeSpan ToTimeSpan(DateTime?       p) { return p.HasValue ? p.Value - DateTime.MinValue       : Configuration.NullableValues.TimeSpan;             }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(DateTimeOffset? p) { return p.HasValue ? p.Value - DateTimeOffset.MinValue : Configuration.NullableValues.TimeSpan;                       }
+		public static TimeSpan ToTimeSpan(DateTimeOffset? p) { return p.HasValue ? p.Value - DateTimeOffset.MinValue : Configuration.NullableValues.TimeSpan;             }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(Double?         p) { return p.HasValue ? TimeSpan.FromDays (p.Value)            : Configuration.NullableValues.TimeSpan;                  }
+		public static TimeSpan ToTimeSpan(Double?         p) { return p.HasValue ? TimeSpan.FromDays (p.Value)            : Configuration.NullableValues.TimeSpan;        }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(Int64?          p) { return p.HasValue ? TimeSpan.FromTicks(p.Value)            : Configuration.NullableValues.TimeSpan;                  }
+		public static TimeSpan ToTimeSpan(Int64?          p) { return p.HasValue ? TimeSpan.FromTicks(p.Value)            : Configuration.NullableValues.TimeSpan;        }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(TimeSpan?       p) { return p.HasValue ? p.Value : Configuration.NullableValues.TimeSpan;                                                 }
+		public static TimeSpan ToTimeSpan(TimeSpan?       p) { return p.HasValue ? p.Value : Configuration.NullableValues.TimeSpan;                                       }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(Binary          p) { return p == null || p.Length == 0? Configuration.NullableValues.TimeSpan : TimeSpan.FromTicks(ToInt64(p.ToArray())); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(Byte[]          p) { return p == null || p.Length == 0? Configuration.NullableValues.TimeSpan : TimeSpan.FromTicks(ToInt64(p));           }
+		public static TimeSpan ToTimeSpan(Byte[]          p) { return p == null || p.Length == 0? Configuration.NullableValues.TimeSpan : TimeSpan.FromTicks(ToInt64(p)); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(SqlDateTime     p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : p.Value - DateTime.MinValue;                             }
+		public static TimeSpan ToTimeSpan(SqlDateTime     p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : p.Value - DateTime.MinValue;                   }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(SqlDouble       p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : TimeSpan.FromDays(p.Value);                              }
+		public static TimeSpan ToTimeSpan(SqlDouble       p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : TimeSpan.FromDays(p.Value);                    }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(SqlInt64        p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : TimeSpan.FromTicks(p.Value);                             }
+		public static TimeSpan ToTimeSpan(SqlInt64        p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : TimeSpan.FromTicks(p.Value);                   }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>TimeSpan</c> value.</summary>
-		public static TimeSpan ToTimeSpan(SqlString       p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : TimeSpan.Parse(p.Value);                                 }
+		public static TimeSpan ToTimeSpan(SqlString       p) { return p.IsNull   ? Configuration.NullableValues.TimeSpan : TimeSpan.Parse(p.Value);                       }
 
 #endif
 
@@ -2552,7 +2508,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToTimeSpan((Binary)         p);
 			if (p is Byte[])          return ToTimeSpan((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -2580,94 +2535,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Boolean    p) { return p ? (UInt16)1 : (UInt16)0;                                                                                }
+		public static UInt16 ToUInt16(Boolean    p) { return p ? (UInt16)1 : (UInt16)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Byte       p) { return p;                                                                                                        }
+		public static UInt16 ToUInt16(Byte       p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Char       p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Char       p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Decimal    p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Decimal    p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Double     p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Double     p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Int16      p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Int16      p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Int32      p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Int32      p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Int64      p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Int64      p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SByte      p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(SByte      p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Single     p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(Single     p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(String     p) { return p == null? Configuration.NullableValues.UInt16 : UInt16.Parse(p);                                         }
+		public static UInt16 ToUInt16(String     p) { return p == null? Configuration.NullableValues.UInt16 : UInt16.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(UInt32     p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(UInt32     p) { return checked((UInt16)p);                                                                             }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(UInt64     p) { return checked((UInt16)p);                                                                                       }
+		public static UInt16 ToUInt16(UInt64     p) { return checked((UInt16)p);                                                                             }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Boolean?   p) { return p.HasValue && p.Value ? (UInt16)1: (UInt16)0;                                                             }
+		public static UInt16 ToUInt16(Boolean?   p) { return p.HasValue && p.Value ? (UInt16)1: (UInt16)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt16;                                               }
+		public static UInt16 ToUInt16(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt16;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Char?      p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Char?      p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Decimal?   p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Decimal?   p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Double?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Double?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Int16?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Int16?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Int32?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Int32?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Int64?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Int64?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SByte?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(SByte?     p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Single?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(Single?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt16;                                               }
+		public static UInt16 ToUInt16(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt16;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(UInt32?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(UInt32?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(UInt64?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                              }
+		public static UInt16 ToUInt16(UInt64?    p) { return p.HasValue ? checked((UInt16)p.Value) : Configuration.NullableValues.UInt16;                    }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>UInt16</c> value.</summary>
-		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt16 : BitConverter.ToUInt16(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt16 : BitConverter.ToUInt16(p, 0);           }
+		public static UInt16 ToUInt16(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt16 : BitConverter.ToUInt16(p, 0); }
 
 #if !SILVERLIGHT
 
@@ -2675,34 +2627,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.UInt16 : p.Value;                                                 }
+		public static UInt16 ToUInt16(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.UInt16 : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>UInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16 ToUInt16(SqlString  p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                                       }
+		public static UInt16 ToUInt16(SqlString  p) { return p.IsNull ? Configuration.NullableValues.UInt16 : ToUInt16(p.Value);                             }
 
 #endif
 
@@ -2758,7 +2710,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToUInt16((Binary)    p);
 			if (p is Byte[])     return ToUInt16((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -2794,94 +2745,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Boolean    p) { return p ? (UInt32)1 : (UInt32)0;                                                                                }
+		public static UInt32 ToUInt32(Boolean    p) { return p ? (UInt32)1 : (UInt32)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Byte       p) { return p;                                                                                                        }
+		public static UInt32 ToUInt32(Byte       p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Char       p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Char       p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Decimal    p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Decimal    p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Double     p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Double     p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Int16      p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Int16      p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Int32      p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Int32      p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Int64      p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Int64      p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SByte      p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(SByte      p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Single     p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(Single     p) { return checked((UInt32)p);                                                                             }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(String     p) { return p == null? Configuration.NullableValues.UInt32 : UInt32.Parse(p);                                         }
+		public static UInt32 ToUInt32(String     p) { return p == null? Configuration.NullableValues.UInt32 : UInt32.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(UInt16     p) { return p;                                                                                                        }
+		public static UInt32 ToUInt32(UInt16     p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(UInt64     p) { return checked((UInt32)p);                                                                                       }
+		public static UInt32 ToUInt32(UInt64     p) { return checked((UInt32)p);                                                                             }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Boolean?   p) { return p.HasValue && p.Value ? (UInt32)1: (UInt32)0;                                                             }
+		public static UInt32 ToUInt32(Boolean?   p) { return p.HasValue && p.Value ? (UInt32)1: (UInt32)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt32;                                               }
+		public static UInt32 ToUInt32(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt32;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Char?      p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Char?      p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Decimal?   p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Decimal?   p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Double?    p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Double?    p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Int16?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Int16?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Int32?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Int32?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Int64?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Int64?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SByte?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(SByte?     p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Single?    p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(Single?    p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt32;                                               }
+		public static UInt32 ToUInt32(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt32;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(UInt32?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt32;                                               }
+		public static UInt32 ToUInt32(UInt32?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt32;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(UInt64?    p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                              }
+		public static UInt32 ToUInt32(UInt64?    p) { return p.HasValue ? checked((UInt32)p.Value) : Configuration.NullableValues.UInt32;                    }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>UInt32</c> value.</summary>
-		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt32 : BitConverter.ToUInt32(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt32 : BitConverter.ToUInt32(p, 0);           }
+		public static UInt32 ToUInt32(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt32 : BitConverter.ToUInt32(p, 0); }
 
 #if !SILVERLIGHT
 
@@ -2889,34 +2837,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.UInt32 : p.Value;                                                 }
+		public static UInt32 ToUInt32(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.UInt32 : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>UInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32 ToUInt32(SqlString  p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                                       }
+		public static UInt32 ToUInt32(SqlString  p) { return p.IsNull ? Configuration.NullableValues.UInt32 : ToUInt32(p.Value);                             }
 
 #endif
 
@@ -2972,7 +2920,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToUInt32((Binary)    p);
 			if (p is Byte[])     return ToUInt32((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -3008,94 +2955,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Boolean    p) { return p ? (UInt64)1 : (UInt64)0;                                                                                }
+		public static UInt64 ToUInt64(Boolean    p) { return p ? (UInt64)1 : (UInt64)0;                                                                      }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Byte       p) { return p;                                                                                                        }
+		public static UInt64 ToUInt64(Byte       p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Char       p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Char       p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Decimal    p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Decimal    p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Double     p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Double     p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Int16      p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Int16      p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Int32      p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Int32      p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Int64      p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Int64      p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SByte      p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(SByte      p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Single     p) { return checked((UInt64)p);                                                                                       }
+		public static UInt64 ToUInt64(Single     p) { return checked((UInt64)p);                                                                             }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(String     p) { return p == null? Configuration.NullableValues.UInt64 : UInt64.Parse(p);                                         }
+		public static UInt64 ToUInt64(String     p) { return p == null? Configuration.NullableValues.UInt64 : UInt64.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(UInt16     p) { return p;                                                                                                        }
+		public static UInt64 ToUInt64(UInt16     p) { return p;                                                                                              }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(UInt32     p) { return p;                                                                                                        }
+		public static UInt64 ToUInt64(UInt32     p) { return p;                                                                                              }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Boolean?   p) { return p.HasValue && p.Value ? (UInt64)1: (UInt64)0;                                                             }
+		public static UInt64 ToUInt64(Boolean?   p) { return p.HasValue && p.Value ? (UInt64)1: (UInt64)0;                                                   }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                               }
+		public static UInt64 ToUInt64(Byte?      p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Char?      p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Char?      p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Decimal?   p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Decimal?   p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Double?    p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Double?    p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Int16?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Int16?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Int32?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Int32?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Int64?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Int64?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SByte?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(SByte?     p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Single?    p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                              }
+		public static UInt64 ToUInt64(Single?    p) { return p.HasValue ? checked((UInt64)p.Value) : Configuration.NullableValues.UInt64;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                               }
+		public static UInt64 ToUInt64(UInt16?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(UInt32?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                               }
+		public static UInt64 ToUInt64(UInt32?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(UInt64?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                               }
+		public static UInt64 ToUInt64(UInt64?    p) { return p.HasValue ? p.Value : Configuration.NullableValues.UInt64;                                     }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>UInt64</c> value.</summary>
-		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Binary     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt64 : BitConverter.ToUInt64(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt64 : BitConverter.ToUInt64(p, 0);           }
+		public static UInt64 ToUInt64(Byte[]     p) { return p == null || p.Length == 0 ? Configuration.NullableValues.UInt64 : BitConverter.ToUInt64(p, 0); }
 
 #if !SILVERLIGHT
 
@@ -3103,34 +3047,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlBoolean p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.UInt64 : p.Value;                                                 }
+		public static UInt64 ToUInt64(SqlByte    p) { return p.IsNull ? Configuration.NullableValues.UInt64 : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlDecimal p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlDouble  p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlInt16   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlInt32   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlInt64   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlMoney   p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlSingle  p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>UInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64 ToUInt64(SqlString  p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                                       }
+		public static UInt64 ToUInt64(SqlString  p) { return p.IsNull ? Configuration.NullableValues.UInt64 : ToUInt64(p.Value);                             }
 
 #endif
 
@@ -3186,7 +3130,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToUInt64((Binary)    p);
 			if (p is Byte[])     return ToUInt64((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -3225,100 +3168,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Boolean    p) { return p;                                                                                    }
+		public static Boolean? ToNullableBoolean(Boolean    p) { return p;                                                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Byte       p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Byte       p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Char       p) { return ToBoolean(p);                                                                         }
+		public static Boolean? ToNullableBoolean(Char       p) { return ToBoolean(p);                                                                   }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Decimal    p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Decimal    p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Double     p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Double     p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Int16      p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Int16      p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Int32      p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Int32      p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Int64      p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Int64      p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(SByte      p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(SByte      p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Single     p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(Single     p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(String     p) { return p == null? (Boolean?)null : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p);       }
+		public static Boolean? ToNullableBoolean(String     p) { return p == null? (Boolean?)null : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p); }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(UInt16     p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(UInt16     p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(UInt32     p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(UInt32     p) { return p != 0;                                                                         }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(UInt64     p) { return p != 0;                                                                               }
+		public static Boolean? ToNullableBoolean(UInt64     p) { return p != 0;                                                                         }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Byte?      p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Byte?      p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Char?      p) { return p.HasValue && ToBoolean(p.Value);                                                     }
+		public static Boolean? ToNullableBoolean(Char?      p) { return p.HasValue && ToBoolean(p.Value);                                               }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Decimal?   p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Decimal?   p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Double?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Double?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Int16?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Int16?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Int32?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Int32?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Int64?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Int64?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(SByte?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(SByte?     p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Single?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(Single?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(UInt16?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(UInt16?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(UInt32?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(UInt32?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Boolean?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Boolean? ToNullableBoolean(UInt64?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                           }
+		public static Boolean? ToNullableBoolean(UInt64?    p) { return p.HasValue ? p.Value != 0 : (Boolean?)null;                                     }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Binary     p) { return p == null || p.Length == 0 ? (Boolean?)null : BitConverter.ToBoolean(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(Byte[]     p) { return p == null || p.Length == 0 ? (Boolean?)null : BitConverter.ToBoolean(p, 0);           }
+		public static Boolean? ToNullableBoolean(Byte[]     p) { return p == null || p.Length == 0 ? (Boolean?)null : BitConverter.ToBoolean(p, 0);     }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlBoolean p) { return p.IsNull ? (Boolean?)null : p.Value;                                                  }
+		public static Boolean? ToNullableBoolean(SqlBoolean p) { return p.IsNull ? (Boolean?)null : p.Value;                                            }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlByte    p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlByte    p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlDecimal p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlDecimal p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlDouble  p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlDouble  p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlInt16   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlInt16   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlInt32   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlInt32   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlInt64   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlInt64   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlMoney   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlMoney   p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlSingle  p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlSingle  p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Boolean?</c> value.</summary>
-		public static Boolean? ToNullableBoolean(SqlString  p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                       }
+		public static Boolean? ToNullableBoolean(SqlString  p) { return p.IsNull ? (Boolean?)null : ToBoolean(p.Value);                                 }
 
 #endif
 
@@ -3374,7 +3315,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableBoolean((Binary)    p);
 			if (p is Byte[])     return ToNullableBoolean((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -3407,100 +3347,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Boolean    p) { return p ? (Byte?)1 : (Byte?)0;                                   }
+		public static Byte? ToNullableByte(Boolean    p) { return p ? (Byte?)1 : (Byte?)0;                            }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Byte       p) { return p;                                                         }
+		public static Byte? ToNullableByte(Byte       p) { return p;                                                  }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Char       p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Char       p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Decimal    p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Decimal    p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Double     p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Double     p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Int16      p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Int16      p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Int32      p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Int32      p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Int64      p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Int64      p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(SByte      p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(SByte      p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Single     p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(Single     p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(String     p) { return p == null? (Byte?)null : Byte.Parse(p);                    }
+		public static Byte? ToNullableByte(String     p) { return p == null? (Byte?)null : Byte.Parse(p);             }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(UInt16     p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(UInt16     p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(UInt32     p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(UInt32     p) { return checked((Byte?)p);                                  }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(UInt64     p) { return checked((Byte?)p);                                         }
+		public static Byte? ToNullableByte(UInt64     p) { return checked((Byte?)p);                                  }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Boolean?   p) { return p.HasValue && p.Value ? (Byte?)1: (Byte?)0;                }
+		public static Byte? ToNullableByte(Boolean?   p) { return p.HasValue && p.Value ? (Byte?)1: (Byte?)0;         }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Char?      p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Char?      p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Decimal?   p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Decimal?   p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Double?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Double?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Int16?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Int16?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Int32?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Int32?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Int64?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Int64?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(SByte?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(SByte?     p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Single?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(Single?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(UInt16?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(UInt16?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(UInt32?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(UInt32?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Byte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Byte? ToNullableByte(UInt64?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null;        }
+		public static Byte? ToNullableByte(UInt64?    p) { return p.HasValue ? checked((Byte?)p.Value) : (Byte?)null; }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Binary     p) { return p == null || p.Length == 0 ? (Byte?)null : p.ToArray()[0]; }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(Byte[]     p) { return p == null || p.Length == 0 ? (Byte?)null : p[0];           }
+		public static Byte? ToNullableByte(Byte[]     p) { return p == null || p.Length == 0 ? (Byte?)null : p[0];    }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlBoolean p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlBoolean p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlByte    p) { return p.IsNull ? (Byte?)null : p.Value;                          }
+		public static Byte? ToNullableByte(SqlByte    p) { return p.IsNull ? (Byte?)null : p.Value;                   }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlDecimal p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlDecimal p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlDouble  p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlDouble  p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlInt16   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlInt16   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlInt32   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlInt32   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlInt64   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlInt64   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlMoney   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlMoney   p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlSingle  p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlSingle  p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Byte?</c> value.</summary>
-		public static Byte? ToNullableByte(SqlString  p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);                  }
+		public static Byte? ToNullableByte(SqlString  p) { return p.IsNull ? (Byte?)null : ToByte(p.Value);           }
 
 #endif
 
@@ -3556,7 +3494,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableByte((Binary)    p);
 			if (p is Byte[])     return ToNullableByte((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -3589,100 +3526,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Boolean    p) { return p ? (Char?)1 : (Char?)0;                                                        }
+		public static Char? ToNullableChar(Boolean    p) { return p ? (Char?)1 : (Char?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Byte       p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Byte       p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Char       p) { return p;                                                                              }
+		public static Char? ToNullableChar(Char       p) { return p;                                                                    }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Decimal    p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Decimal    p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Double     p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Double     p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Int16      p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Int16      p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Int32      p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Int32      p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Int64      p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Int64      p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(SByte      p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(SByte      p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Single     p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(Single     p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(String     p) { return string.IsNullOrEmpty(p)? (Char?)0 : p[0];                                       }
+		public static Char? ToNullableChar(String     p) { return string.IsNullOrEmpty(p)? (Char?)0 : p[0];                             }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(UInt16     p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(UInt16     p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(UInt32     p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(UInt32     p) { return checked((Char?)p);                                                    }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(UInt64     p) { return checked((Char?)p);                                                              }
+		public static Char? ToNullableChar(UInt64     p) { return checked((Char?)p);                                                    }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Boolean?   p) { return p.HasValue && p.Value ? (Char?)1: (Char?)0;                                     }
+		public static Char? ToNullableChar(Boolean?   p) { return p.HasValue && p.Value ? (Char?)1: (Char?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Byte?      p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Byte?      p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Decimal?   p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Decimal?   p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Double?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Double?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Int16?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Int16?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Int32?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Int32?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Int64?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Int64?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(SByte?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(SByte?     p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Single?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(Single?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(UInt16?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(UInt16?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(UInt32?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(UInt32?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Char?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Char? ToNullableChar(UInt64?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                             }
+		public static Char? ToNullableChar(UInt64?    p) { return p.HasValue ? checked((Char?)p.Value) : (Char?)null;                   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Binary     p) { return p == null || p.Length == 0 ? (Char?)null : BitConverter.ToChar(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(Byte[]     p) { return p == null || p.Length == 0 ? (Char?)null : BitConverter.ToChar(p, 0);           }
+		public static Char? ToNullableChar(Byte[]     p) { return p == null || p.Length == 0 ? (Char?)null : BitConverter.ToChar(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlBoolean p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlBoolean p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlByte    p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlByte    p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlDecimal p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlDecimal p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlDouble  p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlDouble  p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlInt16   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlInt16   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlInt32   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlInt32   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlInt64   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlInt64   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlMoney   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlMoney   p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlSingle  p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlSingle  p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Char?</c> value.</summary>
-		public static Char? ToNullableChar(SqlString  p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                                       }
+		public static Char? ToNullableChar(SqlString  p) { return p.IsNull ? (Char?)null : ToChar(p.Value);                             }
 
 #endif
 
@@ -3738,7 +3673,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableChar((Binary)    p);
 			if (p is Byte[])     return ToNullableChar((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -3796,8 +3730,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>DateTime?</c> value.</summary>
-		public static DateTime? ToNullableDateTime(Binary          p) { return p == null || p.Length == 0 ? (DateTime?)null : DateTime.FromBinary(ToInt64(p.ToArray()));   }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>DateTime?</c> value.</summary>
 		public static DateTime? ToNullableDateTime(Byte[]          p) { return p == null || p.Length == 0 ? (DateTime?)null : DateTime.FromBinary(ToInt64(p));             }
 
@@ -3855,7 +3787,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToNullableDateTime((Binary)         p);
 			if (p is Byte[])          return ToNullableDateTime((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -3882,48 +3813,46 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(DateTime       p) { return p;                                                                                                 }
+		public static DateTimeOffset? ToNullableDateTimeOffset(DateTime       p) { return p;                                                                                          }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(DateTimeOffset p) { return p;                                                                                                 }
+		public static DateTimeOffset? ToNullableDateTimeOffset(DateTimeOffset p) { return p;                                                                                          }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(Double         p) { return DateTimeOffset.MinValue + TimeSpan.FromDays (p);                                                   }
+		public static DateTimeOffset? ToNullableDateTimeOffset(Double         p) { return DateTimeOffset.MinValue + TimeSpan.FromDays (p);                                            }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(Int64          p) { return DateTimeOffset.MinValue + TimeSpan.FromTicks(p);                                                   }
+		public static DateTimeOffset? ToNullableDateTimeOffset(Int64          p) { return DateTimeOffset.MinValue + TimeSpan.FromTicks(p);                                            }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(String         p) { return p == null? (DateTimeOffset?)null : DateTimeOffset.Parse(p);                                        }
+		public static DateTimeOffset? ToNullableDateTimeOffset(String         p) { return p == null? (DateTimeOffset?)null : DateTimeOffset.Parse(p);                                 }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(TimeSpan       p) { return DateTimeOffset.MinValue + p;                                                                       }
+		public static DateTimeOffset? ToNullableDateTimeOffset(TimeSpan       p) { return DateTimeOffset.MinValue + p;                                                                }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(DateTime?      p) { return p.HasValue ?                                   p.Value : (DateTimeOffset?)null;                    }
+		public static DateTimeOffset? ToNullableDateTimeOffset(DateTime?      p) { return p.HasValue ?                                   p.Value : (DateTimeOffset?)null;             }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(Double?        p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value): (DateTimeOffset?)null;         }
+		public static DateTimeOffset? ToNullableDateTimeOffset(Double?        p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value): (DateTimeOffset?)null;  }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(Int64?         p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value): (DateTimeOffset?)null;         }
+		public static DateTimeOffset? ToNullableDateTimeOffset(Int64?         p) { return p.HasValue ? DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value): (DateTimeOffset?)null;  }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(TimeSpan?      p) { return p.HasValue ? DateTimeOffset.MinValue +                    p.Value : (DateTimeOffset?)null;         }
+		public static DateTimeOffset? ToNullableDateTimeOffset(TimeSpan?      p) { return p.HasValue ? DateTimeOffset.MinValue +                    p.Value : (DateTimeOffset?)null;  }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(Binary         p) { return p == null || p.Length == 0 ? (DateTimeOffset?)null : new DateTimeOffset?(ToDateTime(p.ToArray())); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(Byte[]         p) { return p == null || p.Length == 0 ? (DateTimeOffset?)null : new DateTimeOffset?(ToDateTime(p));           }
+		public static DateTimeOffset? ToNullableDateTimeOffset(Byte[]         p) { return p == null || p.Length == 0 ? (DateTimeOffset?)null : new DateTimeOffset?(ToDateTime(p));    }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(SqlDateTime    p) { return p.IsNull   ? (DateTimeOffset?)null :                                   p.Value;                    }
+		public static DateTimeOffset? ToNullableDateTimeOffset(SqlDateTime    p) { return p.IsNull   ? (DateTimeOffset?)null :                                   p.Value;             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(SqlDouble      p) { return p.IsNull   ? (DateTimeOffset?)null : DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value);        }
+		public static DateTimeOffset? ToNullableDateTimeOffset(SqlDouble      p) { return p.IsNull   ? (DateTimeOffset?)null : DateTimeOffset.MinValue + TimeSpan.FromDays (p.Value); }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(SqlInt64       p) { return p.IsNull   ? (DateTimeOffset?)null : DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value);        }
+		public static DateTimeOffset? ToNullableDateTimeOffset(SqlInt64       p) { return p.IsNull   ? (DateTimeOffset?)null : DateTimeOffset.MinValue + TimeSpan.FromTicks(p.Value); }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>DateTimeOffset?</c> value.</summary>
-		public static DateTimeOffset? ToNullableDateTimeOffset(SqlString      p) { return p.IsNull   ? (DateTimeOffset?)null :                  ToDateTimeOffset(p.Value);                   }
+		public static DateTimeOffset? ToNullableDateTimeOffset(SqlString      p) { return p.IsNull   ? (DateTimeOffset?)null :                  ToDateTimeOffset(p.Value);            }
 
 #endif
 
@@ -3966,7 +3895,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)         return ToNullableDateTimeOffset((Binary)        p);
 			if (p is Byte[])         return ToNullableDateTimeOffset((Byte[])        p);
 
 #if !SILVERLIGHT
@@ -4058,8 +3986,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Decimal?</c> value.</summary>
-		public static Decimal? ToNullableDecimal(Binary     p) { return p == null || p.Length == 0 ? (Decimal?)null : ToDecimal(p); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Decimal?</c> value.</summary>
 		public static Decimal? ToNullableDecimal(Byte[]     p) { return p == null || p.Length == 0 ? (Decimal?)null : ToDecimal(p); }
 
@@ -4142,7 +4068,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableDecimal((Binary)    p);
 			if (p is Byte[])     return ToNullableDecimal((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -4175,114 +4100,112 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Boolean         p) { return p ? (Double?)1 : (Double?)0;                                                        }
+		public static Double? ToNullableDouble(Boolean         p) { return p ? (Double?)1 : (Double?)0;                                                }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Byte            p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Byte            p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Char            p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Char            p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(DateTime        p) { return (p - DateTime.MinValue).TotalDays;                                                  }
+		public static Double? ToNullableDouble(DateTime        p) { return (p - DateTime.MinValue).TotalDays;                                          }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(DateTimeOffset  p) { return (p - DateTimeOffset.MinValue).TotalDays;                                            }
+		public static Double? ToNullableDouble(DateTimeOffset  p) { return (p - DateTimeOffset.MinValue).TotalDays;                                    }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Decimal         p) { return checked((Double?)p);                                                                }
+		public static Double? ToNullableDouble(Decimal         p) { return checked((Double?)p);                                                        }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Double          p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Double          p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Int16           p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Int16           p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Int32           p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Int32           p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Int64           p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Int64           p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(SByte           p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(SByte           p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Single          p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(Single          p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(String          p) { return p == null? (Double?)null : Double.Parse(p);                                         }
+		public static Double? ToNullableDouble(String          p) { return p == null? (Double?)null : Double.Parse(p);                                 }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(TimeSpan        p) { return p.TotalDays;                                                                        }
+		public static Double? ToNullableDouble(TimeSpan        p) { return p.TotalDays;                                                                }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(UInt16          p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(UInt16          p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(UInt32          p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(UInt32          p) { return p;                                                                          }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(UInt64          p) { return p;                                                                                  }
+		public static Double? ToNullableDouble(UInt64          p) { return p;                                                                          }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Boolean?        p) { return p.HasValue && p.Value ? (Double?)1: (Double?)0;                                     }
+		public static Double? ToNullableDouble(Boolean?        p) { return p.HasValue && p.Value ? (Double?)1: (Double?)0;                             }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Byte?           p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(Byte?           p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Char?           p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(Char?           p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).TotalDays : (Double?)null;               }
+		public static Double? ToNullableDouble(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).TotalDays : (Double?)null;       }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTimeOffset.MinValue).TotalDays : (Double?)null;         }
+		public static Double? ToNullableDouble(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTimeOffset.MinValue).TotalDays : (Double?)null; }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Decimal?        p) { return p.HasValue ? checked((Double?)p.Value) : (Double?)null;                             }
+		public static Double? ToNullableDouble(Decimal?        p) { return p.HasValue ? checked((Double?)p.Value) : (Double?)null;                     }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Int16?          p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(Int16?          p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Int32?          p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(Int32?          p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Int64?          p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(Int64?          p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(SByte?          p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(SByte?          p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Single?         p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(Single?         p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(TimeSpan?       p) { return p.HasValue ? p.Value.TotalDays : (Double?)null;                                     }
+		public static Double? ToNullableDouble(TimeSpan?       p) { return p.HasValue ? p.Value.TotalDays : (Double?)null;                             }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(UInt16?         p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(UInt16?         p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(UInt32?         p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(UInt32?         p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Double?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Double? ToNullableDouble(UInt64?         p) { return p.HasValue ? p.Value : (Double?)null;                                               }
+		public static Double? ToNullableDouble(UInt64?         p) { return p.HasValue ? p.Value : (Double?)null;                                       }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Binary          p) { return p == null || p.Length == 0 ? (Double?)null : BitConverter.ToDouble(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(Byte[]          p) { return p == null || p.Length == 0 ? (Double?)null : BitConverter.ToDouble(p, 0);           }
+		public static Double? ToNullableDouble(Byte[]          p) { return p == null || p.Length == 0 ? (Double?)null : BitConverter.ToDouble(p, 0);   }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlBoolean      p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                                       }
+		public static Double? ToNullableDouble(SqlBoolean      p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlByte         p) { return p.IsNull ? (Double?)null : p.Value;                                                 }
+		public static Double? ToNullableDouble(SqlByte         p) { return p.IsNull ? (Double?)null : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlDateTime     p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                                       }
+		public static Double? ToNullableDouble(SqlDateTime     p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlDecimal      p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                                       }
+		public static Double? ToNullableDouble(SqlDecimal      p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlDouble       p) { return p.IsNull ? (Double?)null : p.Value;                                                 }
+		public static Double? ToNullableDouble(SqlDouble       p) { return p.IsNull ? (Double?)null : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlInt16        p) { return p.IsNull ? (Double?)null : p.Value;                                                 }
+		public static Double? ToNullableDouble(SqlInt16        p) { return p.IsNull ? (Double?)null : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlInt32        p) { return p.IsNull ? (Double?)null : p.Value;                                                 }
+		public static Double? ToNullableDouble(SqlInt32        p) { return p.IsNull ? (Double?)null : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlInt64        p) { return p.IsNull ? (Double?)null : p.Value;                                                 }
+		public static Double? ToNullableDouble(SqlInt64        p) { return p.IsNull ? (Double?)null : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlMoney        p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                                       }
+		public static Double? ToNullableDouble(SqlMoney        p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlSingle       p) { return p.IsNull ? (Double?)null : p.Value;                                                 }
+		public static Double? ToNullableDouble(SqlSingle       p) { return p.IsNull ? (Double?)null : p.Value;                                         }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Double?</c> value.</summary>
-		public static Double? ToNullableDouble(SqlString       p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                                       }
+		public static Double? ToNullableDouble(SqlString       p) { return p.IsNull ? (Double?)null : ToDouble(p.Value);                               }
 
 #endif
 
@@ -4347,7 +4270,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToNullableDouble((Binary)         p);
 			if (p is Byte[])          return ToNullableDouble((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -4381,29 +4303,27 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Guid</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(Guid      p) { return p;                                               }
+		public static Guid? ToNullableGuid(Guid      p) { return p;                                             }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(String    p) { return p == null ? (Guid?)null : new Guid(p);           }
+		public static Guid? ToNullableGuid(String    p) { return p == null ? (Guid?)null : new Guid(p);         }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(Binary    p) { return p == null ? (Guid?)null : new Guid(p.ToArray()); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(Byte[]    p) { return p == null ? (Guid?)null : new Guid(p);           }
+		public static Guid? ToNullableGuid(Byte[]    p) { return p == null ? (Guid?)null : new Guid(p);         }
 		/// <summary>Converts the value from <c>Type</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(Type      p) { return p == null ? (Guid?)null : p.GUID;                }
+		public static Guid? ToNullableGuid(Type      p) { return p == null ? (Guid?)null : p.GUID;              }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBinary</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(SqlBinary p) { return p.IsNull  ? (Guid?)null : p.ToSqlGuid().Value;   }
+		public static Guid? ToNullableGuid(SqlBinary p) { return p.IsNull  ? (Guid?)null : p.ToSqlGuid().Value; }
 		/// <summary>Converts the value from <c>SqlGuid</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(SqlGuid   p) { return p.IsNull ? (Guid?)null : p.Value;                }
+		public static Guid? ToNullableGuid(SqlGuid   p) { return p.IsNull ? (Guid?)null : p.Value;              }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Guid?</c> value.</summary>
-		public static Guid? ToNullableGuid(SqlString p) { return p.IsNull  ? (Guid?)null : new Guid(p.Value);     }
+		public static Guid? ToNullableGuid(SqlString p) { return p.IsNull  ? (Guid?)null : new Guid(p.Value);   }
 
 #endif
 
@@ -4432,7 +4352,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)    return ToNullableGuid((Binary)   p);
 			if (p is Byte[])    return ToNullableGuid((Byte[])   p);
 			if (p is Type)      return ToNullableGuid((Type)     p);
 
@@ -4459,100 +4378,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Boolean    p) { return p ? (Int16?)1 : (Int16?)0;                                                        }
+		public static Int16? ToNullableInt16(Boolean    p) { return p ? (Int16?)1 : (Int16?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Byte       p) { return p;                                                                                }
+		public static Int16? ToNullableInt16(Byte       p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Char       p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(Char       p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Decimal    p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(Decimal    p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Double     p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(Double     p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Int16      p) { return p;                                                                                }
+		public static Int16? ToNullableInt16(Int16      p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Int32      p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(Int32      p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Int64      p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(Int64      p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(SByte      p) { return p;                                                                                }
+		public static Int16? ToNullableInt16(SByte      p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Single     p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(Single     p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(String     p) { return p == null? (Int16?)null : Int16.Parse(p);                                         }
+		public static Int16? ToNullableInt16(String     p) { return p == null? (Int16?)null : Int16.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(UInt16     p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(UInt16     p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(UInt32     p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(UInt32     p) { return checked((Int16?)p);                                                     }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(UInt64     p) { return checked((Int16?)p);                                                               }
+		public static Int16? ToNullableInt16(UInt64     p) { return checked((Int16?)p);                                                     }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Boolean?   p) { return p.HasValue && p.Value ? (Int16?)1: (Int16?)0;                                     }
+		public static Int16? ToNullableInt16(Boolean?   p) { return p.HasValue && p.Value ? (Int16?)1: (Int16?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Byte?      p) { return p.HasValue ? p.Value : (Int16?)null;                                              }
+		public static Int16? ToNullableInt16(Byte?      p) { return p.HasValue ? p.Value : (Int16?)null;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Char?      p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(Char?      p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Decimal?   p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(Decimal?   p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Double?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(Double?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Int32?     p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(Int32?     p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Int64?     p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(Int64?     p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(SByte?     p) { return p.HasValue ? p.Value : (Int16?)null;                                              }
+		public static Int16? ToNullableInt16(SByte?     p) { return p.HasValue ? p.Value : (Int16?)null;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Single?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(Single?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(UInt16?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(UInt16?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(UInt32?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(UInt32?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Int16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int16? ToNullableInt16(UInt64?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                             }
+		public static Int16? ToNullableInt16(UInt64?    p) { return p.HasValue ? checked((Int16?)p.Value) : (Int16?)null;                   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Binary     p) { return p == null || p.Length == 0 ? (Int16?)null : BitConverter.ToInt16(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(Byte[]     p) { return p == null || p.Length == 0 ? (Int16?)null : BitConverter.ToInt16(p, 0);           }
+		public static Int16? ToNullableInt16(Byte[]     p) { return p == null || p.Length == 0 ? (Int16?)null : BitConverter.ToInt16(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlBoolean p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlBoolean p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlByte    p) { return p.IsNull ? (Int16?)null : p.Value;                                                }
+		public static Int16? ToNullableInt16(SqlByte    p) { return p.IsNull ? (Int16?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlDecimal p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlDecimal p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlDouble  p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlDouble  p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlInt16   p) { return p.IsNull ? (Int16?)null : p.Value;                                                }
+		public static Int16? ToNullableInt16(SqlInt16   p) { return p.IsNull ? (Int16?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlInt32   p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlInt32   p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlInt64   p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlInt64   p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlMoney   p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlMoney   p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlSingle  p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlSingle  p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Int16?</c> value.</summary>
-		public static Int16? ToNullableInt16(SqlString  p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                                       }
+		public static Int16? ToNullableInt16(SqlString  p) { return p.IsNull ? (Int16?)null : ToInt16(p.Value);                             }
 
 #endif
 
@@ -4608,7 +4525,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableInt16((Binary)    p);
 			if (p is Byte[])     return ToNullableInt16((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -4641,100 +4557,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Boolean    p) { return p ? (Int32?)1 : (Int32?)0;                                                        }
+		public static Int32? ToNullableInt32(Boolean    p) { return p ? (Int32?)1 : (Int32?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Byte       p) { return p;                                                                                }
+		public static Int32? ToNullableInt32(Byte       p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Char       p) { return p;                                                                                }
+		public static Int32? ToNullableInt32(Char       p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Decimal    p) { return checked((Int32?)p);                                                               }
+		public static Int32? ToNullableInt32(Decimal    p) { return checked((Int32?)p);                                                     }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Double     p) { return checked((Int32?)p);                                                               }
+		public static Int32? ToNullableInt32(Double     p) { return checked((Int32?)p);                                                     }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Int16      p) { return p;                                                                                }
+		public static Int32? ToNullableInt32(Int16      p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Int32      p) { return p;                                                                                }
+		public static Int32? ToNullableInt32(Int32      p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Int64      p) { return checked((Int32?)p);                                                               }
+		public static Int32? ToNullableInt32(Int64      p) { return checked((Int32?)p);                                                     }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(SByte      p) { return p;                                                                                }
+		public static Int32? ToNullableInt32(SByte      p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Single     p) { return checked((Int32?)p);                                                               }
+		public static Int32? ToNullableInt32(Single     p) { return checked((Int32?)p);                                                     }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(String     p) { return p == null? (Int32?)null : Int32.Parse(p);                                         }
+		public static Int32? ToNullableInt32(String     p) { return p == null? (Int32?)null : Int32.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(UInt16     p) { return p;                                                                                }
+		public static Int32? ToNullableInt32(UInt16     p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(UInt32     p) { return checked((Int32?)p);                                                               }
+		public static Int32? ToNullableInt32(UInt32     p) { return checked((Int32?)p);                                                     }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(UInt64     p) { return checked((Int32?)p);                                                               }
+		public static Int32? ToNullableInt32(UInt64     p) { return checked((Int32?)p);                                                     }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Boolean?   p) { return p.HasValue && p.Value ? (Int32?)1: (Int32?)0;                                     }
+		public static Int32? ToNullableInt32(Boolean?   p) { return p.HasValue && p.Value ? (Int32?)1: (Int32?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Byte?      p) { return p.HasValue ? p.Value : (Int32?)null;                                              }
+		public static Int32? ToNullableInt32(Byte?      p) { return p.HasValue ? p.Value : (Int32?)null;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Char?      p) { return p.HasValue ? p.Value : (Int32?)null;                                              }
+		public static Int32? ToNullableInt32(Char?      p) { return p.HasValue ? p.Value : (Int32?)null;                                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Decimal?   p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                             }
+		public static Int32? ToNullableInt32(Decimal?   p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Double?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                             }
+		public static Int32? ToNullableInt32(Double?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Int16?     p) { return p.HasValue ? p.Value : (Int32?)null;                                              }
+		public static Int32? ToNullableInt32(Int16?     p) { return p.HasValue ? p.Value : (Int32?)null;                                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Int64?     p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                             }
+		public static Int32? ToNullableInt32(Int64?     p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                   }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(SByte?     p) { return p.HasValue ? p.Value : (Int32?)null;                                              }
+		public static Int32? ToNullableInt32(SByte?     p) { return p.HasValue ? p.Value : (Int32?)null;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Single?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                             }
+		public static Int32? ToNullableInt32(Single?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                   }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(UInt16?    p) { return p.HasValue ? p.Value : (Int32?)null;                                              }
+		public static Int32? ToNullableInt32(UInt16?    p) { return p.HasValue ? p.Value : (Int32?)null;                                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(UInt32?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                             }
+		public static Int32? ToNullableInt32(UInt32?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                   }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Int32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int32? ToNullableInt32(UInt64?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                             }
+		public static Int32? ToNullableInt32(UInt64?    p) { return p.HasValue ? checked((Int32?)p.Value) : (Int32?)null;                   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Binary     p) { return p == null || p.Length == 0 ? (Int32?)null : BitConverter.ToInt32(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(Byte[]     p) { return p == null || p.Length == 0 ? (Int32?)null : BitConverter.ToInt32(p, 0);           }
+		public static Int32? ToNullableInt32(Byte[]     p) { return p == null || p.Length == 0 ? (Int32?)null : BitConverter.ToInt32(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlBoolean p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlBoolean p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlByte    p) { return p.IsNull ? (Int32?)null : p.Value;                                                }
+		public static Int32? ToNullableInt32(SqlByte    p) { return p.IsNull ? (Int32?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlDecimal p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlDecimal p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlDouble  p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlDouble  p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlInt16   p) { return p.IsNull ? (Int32?)null : p.Value;                                                }
+		public static Int32? ToNullableInt32(SqlInt16   p) { return p.IsNull ? (Int32?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlInt32   p) { return p.IsNull ? (Int32?)null : p.Value;                                                }
+		public static Int32? ToNullableInt32(SqlInt32   p) { return p.IsNull ? (Int32?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlInt64   p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlInt64   p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlMoney   p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlMoney   p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlSingle  p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlSingle  p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Int32?</c> value.</summary>
-		public static Int32? ToNullableInt32(SqlString  p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                                       }
+		public static Int32? ToNullableInt32(SqlString  p) { return p.IsNull ? (Int32?)null : ToInt32(p.Value);                             }
 
 #endif
 
@@ -4790,7 +4704,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableInt32((Binary)    p);
 			if (p is Byte[])     return ToNullableInt32((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -4823,114 +4736,112 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Boolean         p) { return p ? (Int64?)1 : (Int64?)0;                                                        }
+		public static Int64? ToNullableInt64(Boolean         p) { return p ? (Int64?)1 : (Int64?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Byte            p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(Byte            p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Char            p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(Char            p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(DateTime        p) { return (p - DateTime.MinValue).Ticks;                                                    }
+		public static Int64? ToNullableInt64(DateTime        p) { return (p - DateTime.MinValue).Ticks;                                          }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(DateTimeOffset  p) { return (p - DateTime.MinValue).Ticks;                                                    }
+		public static Int64? ToNullableInt64(DateTimeOffset  p) { return (p - DateTime.MinValue).Ticks;                                          }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Decimal         p) { return checked((Int64?)p);                                                               }
+		public static Int64? ToNullableInt64(Decimal         p) { return checked((Int64?)p);                                                     }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Double          p) { return checked((Int64?)p);                                                               }
+		public static Int64? ToNullableInt64(Double          p) { return checked((Int64?)p);                                                     }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Int16           p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(Int16           p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Int32           p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(Int32           p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Int64           p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(Int64           p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(SByte           p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(SByte           p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Single          p) { return checked((Int64?)p);                                                               }
+		public static Int64? ToNullableInt64(Single          p) { return checked((Int64?)p);                                                     }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(String          p) { return p == null? (Int64?)null : Int64.Parse(p);                                         }
+		public static Int64? ToNullableInt64(String          p) { return p == null? (Int64?)null : Int64.Parse(p);                               }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(TimeSpan        p) { return p.Ticks;                                                                          }
+		public static Int64? ToNullableInt64(TimeSpan        p) { return p.Ticks;                                                                }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(UInt16          p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(UInt16          p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(UInt32          p) { return p;                                                                                }
+		public static Int64? ToNullableInt64(UInt32          p) { return p;                                                                      }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(UInt64          p) { return checked((Int64?)p);                                                               }
+		public static Int64? ToNullableInt64(UInt64          p) { return checked((Int64?)p);                                                     }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Boolean?        p) { return p.HasValue && p.Value ? (Int64?)1: (Int64?)0;                                     }
+		public static Int64? ToNullableInt64(Boolean?        p) { return p.HasValue && p.Value ? (Int64?)1: (Int64?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Byte?           p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(Byte?           p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Char?           p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(Char?           p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                             }
+		public static Int64? ToNullableInt64(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                   }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                             }
+		public static Int64? ToNullableInt64(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Decimal?        p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                             }
+		public static Int64? ToNullableInt64(Decimal?        p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Double?         p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                             }
+		public static Int64? ToNullableInt64(Double?         p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Int16?          p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(Int16?          p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Int32?          p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(Int32?          p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(SByte?          p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(SByte?          p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Single?         p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                             }
+		public static Int64? ToNullableInt64(Single?         p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                   }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(TimeSpan?       p) { return p.HasValue ? p.Value.Ticks : 0;                                                   }
+		public static Int64? ToNullableInt64(TimeSpan?       p) { return p.HasValue ? p.Value.Ticks : 0;                                         }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(UInt16?         p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(UInt16?         p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(UInt32?         p) { return p.HasValue ? p.Value : (Int64?)null;                                              }
+		public static Int64? ToNullableInt64(UInt32?         p) { return p.HasValue ? p.Value : (Int64?)null;                                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Int64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Int64? ToNullableInt64(UInt64?         p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                             }
+		public static Int64? ToNullableInt64(UInt64?         p) { return p.HasValue ? checked((Int64?)p.Value) : (Int64?)null;                   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Binary          p) { return p == null || p.Length == 0 ? (Int64?)null : BitConverter.ToInt64(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(Byte[]          p) { return p == null || p.Length == 0 ? (Int64?)null : BitConverter.ToInt64(p, 0);           }
+		public static Int64? ToNullableInt64(Byte[]          p) { return p == null || p.Length == 0 ? (Int64?)null : BitConverter.ToInt64(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlBoolean      p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlBoolean      p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlByte         p) { return p.IsNull ? (Int64?)null : p.Value;                                                }
+		public static Int64? ToNullableInt64(SqlByte         p) { return p.IsNull ? (Int64?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlDateTime     p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlDateTime     p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlDecimal      p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlDecimal      p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlDouble       p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlDouble       p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlInt16        p) { return p.IsNull ? (Int64?)null : p.Value;                                                }
+		public static Int64? ToNullableInt64(SqlInt16        p) { return p.IsNull ? (Int64?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlInt32        p) { return p.IsNull ? (Int64?)null : p.Value;                                                }
+		public static Int64? ToNullableInt64(SqlInt32        p) { return p.IsNull ? (Int64?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlInt64        p) { return p.IsNull ? (Int64?)null : p.Value;                                                }
+		public static Int64? ToNullableInt64(SqlInt64        p) { return p.IsNull ? (Int64?)null : p.Value;                                      }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlMoney        p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlMoney        p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlSingle       p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlSingle       p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Int64?</c> value.</summary>
-		public static Int64? ToNullableInt64(SqlString       p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                                       }
+		public static Int64? ToNullableInt64(SqlString       p) { return p.IsNull ? (Int64?)null : ToInt64(p.Value);                             }
 
 #endif
 
@@ -4995,7 +4906,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToNullableInt64((Binary)         p);
 			if (p is Byte[])          return ToNullableInt64((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -5030,94 +4940,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Boolean    p) { return p ? (SByte?)1 : (SByte?)0;                                                   }
+		public static SByte? ToNullableSByte(Boolean    p) { return p ? (SByte?)1 : (SByte?)0;                                         }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Byte       p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Byte       p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Char       p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Char       p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Decimal    p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Decimal    p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Double     p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Double     p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Int16      p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Int16      p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Int32      p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Int32      p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Int64      p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Int64      p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SByte      p) { return p;                                                                           }
+		public static SByte? ToNullableSByte(SByte      p) { return p;                                                                 }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Single     p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(Single     p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(String     p) { return p == null? (SByte?)null : SByte.Parse(p);                                    }
+		public static SByte? ToNullableSByte(String     p) { return p == null? (SByte?)null : SByte.Parse(p);                          }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(UInt16     p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(UInt16     p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(UInt32     p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(UInt32     p) { return checked((SByte?)p);                                                }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(UInt64     p) { return checked((SByte?)p);                                                          }
+		public static SByte? ToNullableSByte(UInt64     p) { return checked((SByte?)p);                                                }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Boolean?   p) { return p.HasValue && p.Value ? (SByte?)1: (SByte?)0;                                }
+		public static SByte? ToNullableSByte(Boolean?   p) { return p.HasValue && p.Value ? (SByte?)1: (SByte?)0;                      }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Byte?      p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Byte?      p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Char?      p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Char?      p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Decimal?   p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Decimal?   p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Double?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Double?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Int16?     p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Int16?     p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Int32?     p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Int32?     p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Int64?     p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Int64?     p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Single?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(Single?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(UInt16?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(UInt16?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(UInt32?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(UInt32?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(UInt64?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;                        }
+		public static SByte? ToNullableSByte(UInt64?    p) { return p.HasValue ? checked((SByte?)p.Value) : (SByte?)null;              }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SByte?</c> value.</summary>
-		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Binary     p) { return p == null || p.Length == 0 ? (SByte?)null : checked((SByte?)p.ToArray()[0]); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(Byte[]     p) { return p == null || p.Length == 0 ? (SByte?)null : checked((SByte?)p[0]);           }
+		public static SByte? ToNullableSByte(Byte[]     p) { return p == null || p.Length == 0 ? (SByte?)null : checked((SByte?)p[0]); }
 
 #if !SILVERLIGHT
 
@@ -5125,34 +5032,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlBoolean p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlBoolean p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlByte    p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlByte    p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlDecimal p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlDecimal p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlDouble  p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlDouble  p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlInt16   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlInt16   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlInt32   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlInt32   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlInt64   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlInt64   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlMoney   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlMoney   p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlSingle  p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlSingle  p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SByte?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SByte? ToNullableSByte(SqlString  p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                                  }
+		public static SByte? ToNullableSByte(SqlString  p) { return p.IsNull ? (SByte?)null : ToSByte(p.Value);                        }
 
 #endif
 
@@ -5209,7 +5116,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableSByte((Binary)    p);
 			if (p is Byte[])     return ToNullableSByte((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -5242,100 +5148,98 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Boolean    p) { return p ? (Single?)1 : (Single?)0;                                                        }
+		public static Single? ToNullableSingle(Boolean    p) { return p ? (Single?)1 : (Single?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Byte       p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(Byte       p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Char       p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(Char       p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Decimal    p) { return checked((Single?)p);                                                                }
+		public static Single? ToNullableSingle(Decimal    p) { return checked((Single?)p);                                                      }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Double     p) { return checked((Single?)p);                                                                }
+		public static Single? ToNullableSingle(Double     p) { return checked((Single?)p);                                                      }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Int16      p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(Int16      p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Int32      p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(Int32      p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Int64      p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(Int64      p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(SByte      p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(SByte      p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Single     p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(Single     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(String     p) { return p == null? (Single?)null : Single.Parse(p);                                         }
+		public static Single? ToNullableSingle(String     p) { return p == null? (Single?)null : Single.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(UInt16     p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(UInt16     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(UInt32     p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(UInt32     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(UInt64     p) { return p;                                                                                  }
+		public static Single? ToNullableSingle(UInt64     p) { return p;                                                                        }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Boolean?   p) { return p.HasValue && p.Value ? (Single?)1: (Single?)0;                                     }
+		public static Single? ToNullableSingle(Boolean?   p) { return p.HasValue && p.Value ? (Single?)1: (Single?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Byte?      p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(Byte?      p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Char?      p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(Char?      p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Decimal?   p) { return p.HasValue ? checked((Single?)p.Value) : (Single?)null;                             }
+		public static Single? ToNullableSingle(Decimal?   p) { return p.HasValue ? checked((Single?)p.Value) : (Single?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Double?    p) { return p.HasValue ? checked((Single?)p.Value) : (Single?)null;                             }
+		public static Single? ToNullableSingle(Double?    p) { return p.HasValue ? checked((Single?)p.Value) : (Single?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Int16?     p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(Int16?     p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Int32?     p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(Int32?     p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Int64?     p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(Int64?     p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(SByte?     p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(SByte?     p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(UInt16?    p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(UInt16?    p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(UInt32?    p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(UInt32?    p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Single?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static Single? ToNullableSingle(UInt64?    p) { return p.HasValue ? p.Value : (Single?)null;                                               }
+		public static Single? ToNullableSingle(UInt64?    p) { return p.HasValue ? p.Value : (Single?)null;                                     }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Binary     p) { return p == null || p.Length == 0 ? (Single?)null : BitConverter.ToSingle(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(Byte[]     p) { return p == null || p.Length == 0 ? (Single?)null : BitConverter.ToSingle(p, 0);           }
+		public static Single? ToNullableSingle(Byte[]     p) { return p == null || p.Length == 0 ? (Single?)null : BitConverter.ToSingle(p, 0); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlBoolean p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                                       }
+		public static Single? ToNullableSingle(SqlBoolean p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlByte    p) { return p.IsNull ? (Single?)null : p.Value;                                                 }
+		public static Single? ToNullableSingle(SqlByte    p) { return p.IsNull ? (Single?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlDecimal p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                                       }
+		public static Single? ToNullableSingle(SqlDecimal p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlDouble  p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                                       }
+		public static Single? ToNullableSingle(SqlDouble  p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlInt16   p) { return p.IsNull ? (Single?)null : p.Value;                                                 }
+		public static Single? ToNullableSingle(SqlInt16   p) { return p.IsNull ? (Single?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlInt32   p) { return p.IsNull ? (Single?)null : p.Value;                                                 }
+		public static Single? ToNullableSingle(SqlInt32   p) { return p.IsNull ? (Single?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlInt64   p) { return p.IsNull ? (Single?)null : p.Value;                                                 }
+		public static Single? ToNullableSingle(SqlInt64   p) { return p.IsNull ? (Single?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlMoney   p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                                       }
+		public static Single? ToNullableSingle(SqlMoney   p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlSingle  p) { return p.IsNull ? (Single?)null : p.Value;                                                 }
+		public static Single? ToNullableSingle(SqlSingle  p) { return p.IsNull ? (Single?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Single?</c> value.</summary>
-		public static Single? ToNullableSingle(SqlString  p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                                       }
+		public static Single? ToNullableSingle(SqlString  p) { return p.IsNull ? (Single?)null : ToSingle(p.Value);                             }
 
 #endif
 
@@ -5391,7 +5295,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableSingle((Binary)    p);
 			if (p is Byte[])     return ToNullableSingle((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -5424,48 +5327,46 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(DateTime        p) { return p - DateTime.MinValue;                                                                  }
+		public static TimeSpan? ToNullableTimeSpan(DateTime        p) { return p - DateTime.MinValue;                                                        }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(DateTimeOffset  p) { return p - DateTimeOffset.MinValue;                                                            }
+		public static TimeSpan? ToNullableTimeSpan(DateTimeOffset  p) { return p - DateTimeOffset.MinValue;                                                  }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(Double          p) { return TimeSpan.FromDays (p);                                                                  }
+		public static TimeSpan? ToNullableTimeSpan(Double          p) { return TimeSpan.FromDays (p);                                                        }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(Int64           p) { return TimeSpan.FromTicks(p);                                                                  }
+		public static TimeSpan? ToNullableTimeSpan(Int64           p) { return TimeSpan.FromTicks(p);                                                        }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(String          p) { return p == null? (TimeSpan?)null : TimeSpan.Parse(p);                                         }
+		public static TimeSpan? ToNullableTimeSpan(String          p) { return p == null? (TimeSpan?)null : TimeSpan.Parse(p);                               }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(TimeSpan        p) { return p;                                                                                      }
+		public static TimeSpan? ToNullableTimeSpan(TimeSpan        p) { return p;                                                                            }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(DateTime?       p) { return p.HasValue ? p.Value - DateTime.MinValue       : (TimeSpan?)null;                       }
+		public static TimeSpan? ToNullableTimeSpan(DateTime?       p) { return p.HasValue ? p.Value - DateTime.MinValue       : (TimeSpan?)null;             }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(DateTimeOffset? p) { return p.HasValue ? p.Value - DateTimeOffset.MinValue : (TimeSpan?)null;                       }
+		public static TimeSpan? ToNullableTimeSpan(DateTimeOffset? p) { return p.HasValue ? p.Value - DateTimeOffset.MinValue : (TimeSpan?)null;             }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(Double?         p) { return p.HasValue ? TimeSpan.FromDays (p.Value)            : (TimeSpan?)null;                  }
+		public static TimeSpan? ToNullableTimeSpan(Double?         p) { return p.HasValue ? TimeSpan.FromDays (p.Value)            : (TimeSpan?)null;        }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(Int64?          p) { return p.HasValue ? TimeSpan.FromTicks(p.Value)            : (TimeSpan?)null;                  }
+		public static TimeSpan? ToNullableTimeSpan(Int64?          p) { return p.HasValue ? TimeSpan.FromTicks(p.Value)            : (TimeSpan?)null;        }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(Binary          p) { return p == null || p.Length == 0? (TimeSpan?)null : TimeSpan.FromTicks(ToInt64(p.ToArray())); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(Byte[]          p) { return p == null || p.Length == 0? (TimeSpan?)null : TimeSpan.FromTicks(ToInt64(p));           }
+		public static TimeSpan? ToNullableTimeSpan(Byte[]          p) { return p == null || p.Length == 0? (TimeSpan?)null : TimeSpan.FromTicks(ToInt64(p)); }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(SqlDateTime     p) { return p.IsNull   ? (TimeSpan?)null : p.Value - DateTime.MinValue;                             }
+		public static TimeSpan? ToNullableTimeSpan(SqlDateTime     p) { return p.IsNull   ? (TimeSpan?)null : p.Value - DateTime.MinValue;                   }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(SqlDouble       p) { return p.IsNull   ? (TimeSpan?)null : TimeSpan.FromDays(p.Value);                              }
+		public static TimeSpan? ToNullableTimeSpan(SqlDouble       p) { return p.IsNull   ? (TimeSpan?)null : TimeSpan.FromDays(p.Value);                    }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(SqlInt64        p) { return p.IsNull   ? (TimeSpan?)null : TimeSpan.FromTicks(p.Value);                             }
+		public static TimeSpan? ToNullableTimeSpan(SqlInt64        p) { return p.IsNull   ? (TimeSpan?)null : TimeSpan.FromTicks(p.Value);                   }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>TimeSpan?</c> value.</summary>
-		public static TimeSpan? ToNullableTimeSpan(SqlString       p) { return p.IsNull   ? (TimeSpan?)null : TimeSpan.Parse(p.Value);                                 }
+		public static TimeSpan? ToNullableTimeSpan(SqlString       p) { return p.IsNull   ? (TimeSpan?)null : TimeSpan.Parse(p.Value);                       }
 
 #endif
 
@@ -5508,7 +5409,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToNullableTimeSpan((Binary)         p);
 			if (p is Byte[])          return ToNullableTimeSpan((Byte[])         p);
 
 #if !SILVERLIGHT
@@ -5536,94 +5436,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Boolean    p) { return p ? (UInt16?)1 : (UInt16?)0;                                                        }
+		public static UInt16? ToNullableUInt16(Boolean    p) { return p ? (UInt16?)1 : (UInt16?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Byte       p) { return p;                                                                                  }
+		public static UInt16? ToNullableUInt16(Byte       p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Char       p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Char       p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Decimal    p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Decimal    p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Double     p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Double     p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Int16      p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Int16      p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Int32      p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Int32      p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Int64      p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Int64      p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SByte      p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(SByte      p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Single     p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(Single     p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(String     p) { return p == null? (UInt16?)null : UInt16.Parse(p);                                         }
+		public static UInt16? ToNullableUInt16(String     p) { return p == null? (UInt16?)null : UInt16.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(UInt16     p) { return p;                                                                                  }
+		public static UInt16? ToNullableUInt16(UInt16     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(UInt32     p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(UInt32     p) { return checked((UInt16?)p);                                                      }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(UInt64     p) { return checked((UInt16?)p);                                                                }
+		public static UInt16? ToNullableUInt16(UInt64     p) { return checked((UInt16?)p);                                                      }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Boolean?   p) { return p.HasValue && p.Value ? (UInt16?)1: (UInt16?)0;                                     }
+		public static UInt16? ToNullableUInt16(Boolean?   p) { return p.HasValue && p.Value ? (UInt16?)1: (UInt16?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Byte?      p) { return p.HasValue ? p.Value : (UInt16?)null;                                               }
+		public static UInt16? ToNullableUInt16(Byte?      p) { return p.HasValue ? p.Value : (UInt16?)null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Char?      p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Char?      p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Decimal?   p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Decimal?   p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Double?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Double?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Int16?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Int16?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Int32?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Int32?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Int64?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Int64?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SByte?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(SByte?     p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Single?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(Single?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(UInt32?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(UInt32?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(UInt64?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                             }
+		public static UInt16? ToNullableUInt16(UInt64?    p) { return p.HasValue ? checked((UInt16?)p.Value) : (UInt16?)null;                   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>UInt16?</c> value.</summary>
-		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Binary     p) { return p == null || p.Length == 0 ? (UInt16?)null : BitConverter.ToUInt16(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(Byte[]     p) { return p == null || p.Length == 0 ? (UInt16?)null : BitConverter.ToUInt16(p, 0);           }
+		public static UInt16? ToNullableUInt16(Byte[]     p) { return p == null || p.Length == 0 ? (UInt16?)null : BitConverter.ToUInt16(p, 0); }
 
 #if !SILVERLIGHT
 
@@ -5631,34 +5528,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlBoolean p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlBoolean p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlByte    p) { return p.IsNull ? (UInt16?)null : p.Value;                                                 }
+		public static UInt16? ToNullableUInt16(SqlByte    p) { return p.IsNull ? (UInt16?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlDecimal p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlDecimal p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlDouble  p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlDouble  p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlInt16   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlInt16   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlInt32   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlInt32   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlInt64   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlInt64   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlMoney   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlMoney   p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlSingle  p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlSingle  p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>UInt16?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt16? ToNullableUInt16(SqlString  p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                                       }
+		public static UInt16? ToNullableUInt16(SqlString  p) { return p.IsNull ? (UInt16?)null : ToUInt16(p.Value);                             }
 
 #endif
 
@@ -5715,7 +5612,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableUInt16((Binary)    p);
 			if (p is Byte[])     return ToNullableUInt16((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -5749,94 +5645,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Boolean    p) { return p ? (UInt32?)1 : (UInt32?)0;                                                        }
+		public static UInt32? ToNullableUInt32(Boolean    p) { return p ? (UInt32?)1 : (UInt32?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Byte       p) { return p;                                                                                  }
+		public static UInt32? ToNullableUInt32(Byte       p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Char       p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Char       p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Decimal    p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Decimal    p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Double     p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Double     p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Int16      p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Int16      p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Int32      p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Int32      p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Int64      p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Int64      p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SByte      p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(SByte      p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Single     p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(Single     p) { return checked((UInt32?)p);                                                      }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(String     p) { return p == null? (UInt32?)null : UInt32.Parse(p);                                         }
+		public static UInt32? ToNullableUInt32(String     p) { return p == null? (UInt32?)null : UInt32.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(UInt16     p) { return p;                                                                                  }
+		public static UInt32? ToNullableUInt32(UInt16     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(UInt32     p) { return p;                                                                                  }
+		public static UInt32? ToNullableUInt32(UInt32     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(UInt64     p) { return checked((UInt32?)p);                                                                }
+		public static UInt32? ToNullableUInt32(UInt64     p) { return checked((UInt32?)p);                                                      }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Boolean?   p) { return p.HasValue && p.Value ? (UInt32?)1: (UInt32?)0;                                     }
+		public static UInt32? ToNullableUInt32(Boolean?   p) { return p.HasValue && p.Value ? (UInt32?)1: (UInt32?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Byte?      p) { return p.HasValue ? p.Value : (UInt32?)null;                                               }
+		public static UInt32? ToNullableUInt32(Byte?      p) { return p.HasValue ? p.Value : (UInt32?)null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Char?      p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Char?      p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Decimal?   p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Decimal?   p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Double?    p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Double?    p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Int16?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Int16?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Int32?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Int32?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Int64?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Int64?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SByte?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(SByte?     p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Single?    p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(Single?    p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(UInt16?    p) { return p.HasValue ? p.Value : (UInt32?)null;                                               }
+		public static UInt32? ToNullableUInt32(UInt16?    p) { return p.HasValue ? p.Value : (UInt32?)null;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(UInt64?    p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                             }
+		public static UInt32? ToNullableUInt32(UInt64?    p) { return p.HasValue ? checked((UInt32?)p.Value) : (UInt32?)null;                   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>UInt32?</c> value.</summary>
-		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Binary     p) { return p == null || p.Length == 0 ? (UInt32?)null : BitConverter.ToUInt32(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(Byte[]     p) { return p == null || p.Length == 0 ? (UInt32?)null : BitConverter.ToUInt32(p, 0);           }
+		public static UInt32? ToNullableUInt32(Byte[]     p) { return p == null || p.Length == 0 ? (UInt32?)null : BitConverter.ToUInt32(p, 0); }
 
 #if !SILVERLIGHT
 
@@ -5844,34 +5737,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlBoolean p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlBoolean p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlByte    p) { return p.IsNull ? (UInt32?)null : p.Value;                                                 }
+		public static UInt32? ToNullableUInt32(SqlByte    p) { return p.IsNull ? (UInt32?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlDecimal p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlDecimal p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlDouble  p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlDouble  p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlInt16   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlInt16   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlInt32   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlInt32   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlInt64   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlInt64   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlMoney   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlMoney   p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlSingle  p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlSingle  p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>UInt32?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt32? ToNullableUInt32(SqlString  p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                                       }
+		public static UInt32? ToNullableUInt32(SqlString  p) { return p.IsNull ? (UInt32?)null : ToUInt32(p.Value);                             }
 
 #endif
 
@@ -5928,7 +5821,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableUInt32((Binary)    p);
 			if (p is Byte[])     return ToNullableUInt32((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -5962,94 +5854,91 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Boolean    p) { return p ? (UInt64?)1 : (UInt64?)0;                                                        }
+		public static UInt64? ToNullableUInt64(Boolean    p) { return p ? (UInt64?)1 : (UInt64?)0;                                              }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Byte       p) { return p;                                                                                  }
+		public static UInt64? ToNullableUInt64(Byte       p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Char       p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Char       p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Decimal    p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Decimal    p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Double     p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Double     p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Int16      p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Int16      p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Int32      p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Int32      p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Int64      p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Int64      p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SByte      p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(SByte      p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Single     p) { return checked((UInt64?)p);                                                                }
+		public static UInt64? ToNullableUInt64(Single     p) { return checked((UInt64?)p);                                                      }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(String     p) { return p == null? (UInt64?)null : UInt64.Parse(p);                                         }
+		public static UInt64? ToNullableUInt64(String     p) { return p == null? (UInt64?)null : UInt64.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(UInt16     p) { return p;                                                                                  }
+		public static UInt64? ToNullableUInt64(UInt16     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(UInt32     p) { return p;                                                                                  }
+		public static UInt64? ToNullableUInt64(UInt32     p) { return p;                                                                        }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(UInt64     p) { return p;                                                                                  }
+		public static UInt64? ToNullableUInt64(UInt64     p) { return p;                                                                        }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Boolean?   p) { return p.HasValue && p.Value ? (UInt64?)1: (UInt64?)0;                                     }
+		public static UInt64? ToNullableUInt64(Boolean?   p) { return p.HasValue && p.Value ? (UInt64?)1: (UInt64?)0;                           }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Byte?      p) { return p.HasValue ? p.Value : (UInt64?)null;                                               }
+		public static UInt64? ToNullableUInt64(Byte?      p) { return p.HasValue ? p.Value : (UInt64?)null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Char?      p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Char?      p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Decimal?   p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Decimal?   p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Double?    p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Double?    p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Int16?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Int16?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Int32?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Int32?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Int64?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Int64?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SByte?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(SByte?     p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Single?    p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                             }
+		public static UInt64? ToNullableUInt64(Single?    p) { return p.HasValue ? checked((UInt64?)p.Value) : (UInt64?)null;                   }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(UInt16?    p) { return p.HasValue ? p.Value : (UInt64?)null;                                               }
+		public static UInt64? ToNullableUInt64(UInt16?    p) { return p.HasValue ? p.Value : (UInt64?)null;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(UInt32?    p) { return p.HasValue ? p.Value : (UInt64?)null;                                               }
+		public static UInt64? ToNullableUInt64(UInt32?    p) { return p.HasValue ? p.Value : (UInt64?)null;                                     }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>UInt64?</c> value.</summary>
-		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Binary     p) { return p == null || p.Length == 0 ? (UInt64?)null : BitConverter.ToUInt64(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(Byte[]     p) { return p == null || p.Length == 0 ? (UInt64?)null : BitConverter.ToUInt64(p, 0);           }
+		public static UInt64? ToNullableUInt64(Byte[]     p) { return p == null || p.Length == 0 ? (UInt64?)null : BitConverter.ToUInt64(p, 0); }
 
 #if !SILVERLIGHT
 
@@ -6057,34 +5946,34 @@ namespace BLToolkit.Common
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlBoolean p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlBoolean p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlByte    p) { return p.IsNull ? (UInt64?)null : p.Value;                                                 }
+		public static UInt64? ToNullableUInt64(SqlByte    p) { return p.IsNull ? (UInt64?)null : p.Value;                                       }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlDecimal p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlDecimal p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlDouble  p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlDouble  p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlInt16   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlInt16   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlInt32   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlInt32   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlInt64   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlInt64   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlMoney   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlMoney   p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlSingle  p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlSingle  p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>UInt64?</c> value.</summary>
 		[CLSCompliant(false)]
-		public static UInt64? ToNullableUInt64(SqlString  p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                                       }
+		public static UInt64? ToNullableUInt64(SqlString  p) { return p.IsNull ? (UInt64?)null : ToUInt64(p.Value);                             }
 
 #endif
 
@@ -6141,7 +6030,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToNullableUInt64((Binary)    p);
 			if (p is Byte[])     return ToNullableUInt64((Byte[])    p);
 
 #if !SILVERLIGHT
@@ -6196,8 +6084,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlBinary</c> value.</summary>
-		public static SqlBinary ToSqlBinary(Binary   p) { return p == null ?      SqlBinary.Null : p.ToArray();                   }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlBinary</c> value.</summary>
 		public static SqlBinary ToSqlBinary(Byte[]   p) { return p;                                                               }
 
@@ -6233,7 +6119,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)   return ToSqlBinary((Binary)  p);
 			if (p is Byte[])   return ToSqlBinary((Byte[])  p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlBinary));
@@ -6250,98 +6135,96 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Boolean    p) { return p;                                                                                     }
+		public static SqlBoolean ToSqlBoolean(Boolean    p) { return p;                                                                               }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Byte       p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Byte       p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Char       p) { return ToBoolean(p);                                                                          }
+		public static SqlBoolean ToSqlBoolean(Char       p) { return ToBoolean(p);                                                                    }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Decimal    p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Decimal    p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Double     p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Double     p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Int16      p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Int16      p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Int32      p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Int32      p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Int64      p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Int64      p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(SByte      p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(SByte      p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Single     p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(Single     p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(String     p) { return p == null? SqlBoolean.Null : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p);       }
+		public static SqlBoolean ToSqlBoolean(String     p) { return p == null? SqlBoolean.Null : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p); }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(UInt16     p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(UInt16     p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(UInt32     p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(UInt32     p) { return p != 0;                                                                          }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(UInt64     p) { return p != 0;                                                                                }
+		public static SqlBoolean ToSqlBoolean(UInt64     p) { return p != 0;                                                                          }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Boolean?   p) { return p.HasValue ? p.Value : SqlBoolean.Null;                                                }
+		public static SqlBoolean ToSqlBoolean(Boolean?   p) { return p.HasValue ? p.Value : SqlBoolean.Null;                                          }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Byte?      p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Byte?      p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Char?      p) { return p.HasValue && ToBoolean(p.Value);                                                      }
+		public static SqlBoolean ToSqlBoolean(Char?      p) { return p.HasValue && ToBoolean(p.Value);                                                }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Decimal?   p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Decimal?   p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Double?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Double?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Int16?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Int16?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Int32?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Int32?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Int64?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Int64?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(SByte?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(SByte?     p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Single?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(Single?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(UInt16?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(UInt16?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(UInt32?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(UInt32?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlBoolean</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlBoolean ToSqlBoolean(UInt64?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                           }
+		public static SqlBoolean ToSqlBoolean(UInt64?    p) { return p.HasValue ? p.Value != 0 : SqlBoolean.Null;                                     }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlByte    p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlByte    p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlDecimal p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlDecimal p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlDouble  p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlDouble  p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlInt16   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlInt16   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlInt32   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlInt32   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlInt64   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlInt64   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlMoney   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlMoney   p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlSingle  p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlSingle  p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(SqlString  p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                       }
+		public static SqlBoolean ToSqlBoolean(SqlString  p) { return p.IsNull ? SqlBoolean.Null : ToBoolean(p.Value);                                 }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Binary     p) { return p == null || p.Length == 0 ? SqlBoolean.Null : BitConverter.ToBoolean(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlBoolean</c> value.</summary>
-		public static SqlBoolean ToSqlBoolean(Byte[]     p) { return p == null || p.Length == 0 ? SqlBoolean.Null : BitConverter.ToBoolean(p, 0);           }
+		public static SqlBoolean ToSqlBoolean(Byte[]     p) { return p == null || p.Length == 0 ? SqlBoolean.Null : BitConverter.ToBoolean(p, 0);     }
 
 		// From Object
 		//
@@ -6411,7 +6294,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlBoolean((Binary)    p);
 			if (p is Byte[])     return ToSqlBoolean((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlBoolean));
@@ -6428,98 +6310,96 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Boolean    p) { return p ? (SqlByte)1 : (SqlByte)0;                                }
+		public static SqlByte ToSqlByte(Boolean    p) { return p ? (SqlByte)1 : (SqlByte)0;                        }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Byte       p) { return p;                                                          }
+		public static SqlByte ToSqlByte(Byte       p) { return p;                                                  }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Char       p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Char       p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Decimal    p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Decimal    p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Double     p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Double     p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Int16      p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Int16      p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Int32      p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Int32      p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Int64      p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Int64      p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(SByte      p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(SByte      p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Single     p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(Single     p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(String     p) { return p == null? SqlByte.Null : Byte.Parse(p);                    }
+		public static SqlByte ToSqlByte(String     p) { return p == null? SqlByte.Null : Byte.Parse(p);            }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(UInt16     p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(UInt16     p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(UInt32     p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(UInt32     p) { return checked((Byte)p);                                   }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(UInt64     p) { return checked((Byte)p);                                           }
+		public static SqlByte ToSqlByte(UInt64     p) { return checked((Byte)p);                                   }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Boolean?   p) { return p.HasValue && p.Value ? (SqlByte)1: (SqlByte)0;             }
+		public static SqlByte ToSqlByte(Boolean?   p) { return p.HasValue && p.Value ? (SqlByte)1: (SqlByte)0;     }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Byte?      p) { return p.HasValue ? p.Value : SqlByte.Null;                        }
+		public static SqlByte ToSqlByte(Byte?      p) { return p.HasValue ? p.Value : SqlByte.Null;                }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Char?      p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Char?      p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Decimal?   p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Decimal?   p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Double?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Double?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Int16?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Int16?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Int32?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Int32?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Int64?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Int64?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(SByte?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(SByte?     p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Single?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(Single?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(UInt16?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(UInt16?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(UInt32?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(UInt32?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlByte</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlByte ToSqlByte(UInt64?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null;         }
+		public static SqlByte ToSqlByte(UInt64?    p) { return p.HasValue ? checked((Byte)p.Value) : SqlByte.Null; }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlBoolean p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlBoolean p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlDecimal p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlDecimal p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlDouble  p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlDouble  p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlInt16   p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlInt16   p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlInt32   p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlInt32   p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlInt64   p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlInt64   p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlMoney   p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlMoney   p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlSingle  p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlSingle  p) { return p.ToSqlByte();                                      }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(SqlString  p) { return p.ToSqlByte();                                              }
+		public static SqlByte ToSqlByte(SqlString  p) { return p.ToSqlByte();                                      }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Binary     p) { return p == null || p.Length == 0 ? SqlByte.Null : p.ToArray()[0]; }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlByte</c> value.</summary>
-		public static SqlByte ToSqlByte(Byte[]     p) { return p == null || p.Length == 0 ? SqlByte.Null : p[0];           }
+		public static SqlByte ToSqlByte(Byte[]     p) { return p == null || p.Length == 0 ? SqlByte.Null : p[0];   }
 
 		// From Object
 		//
@@ -6589,7 +6469,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlByte((Binary)    p);
 			if (p is Byte[])     return ToSqlByte((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlByte));
@@ -6694,8 +6573,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlBytes</c> value.</summary>
-		public static SqlBytes ToSqlBytes(Binary          p) { return p == null ? SqlBytes.Null : new SqlBytes(p.ToArray());            }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlBytes</c> value.</summary>
 		public static SqlBytes ToSqlBytes(Byte[]          p) { return p == null ? SqlBytes.Null : new SqlBytes(p);                      }
 		/// <summary>Converts the value from <c>Stream</c> to an equivalent <c>SqlBytes</c> value.</summary>
@@ -6772,7 +6649,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToSqlBytes((Binary)         p);
 			if (p is Byte[])          return ToSqlBytes((Byte[])         p);
 			if (p is Stream)          return ToSqlBytes((Stream)         p);
 
@@ -6834,8 +6710,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlDateTime</c> value.</summary>
-		public static SqlDateTime ToSqlDateTime(Binary          p) { return p == null || p.Length == 0 ? SqlDateTime.Null : DateTime.FromBinary(ToInt64(p.ToArray()));   }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlDateTime</c> value.</summary>
 		public static SqlDateTime ToSqlDateTime(Byte[]          p) { return p == null || p.Length == 0 ? SqlDateTime.Null : DateTime.FromBinary(ToInt64(p));             }
 
@@ -6888,7 +6762,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToSqlDateTime((Binary)         p);
 			if (p is Byte[])          return ToSqlDateTime((Byte[])         p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlDateTime));
@@ -6993,8 +6866,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlDecimal</c> value.</summary>
-		public static SqlDecimal ToSqlDecimal(Binary     p) { return p == null || p.Length == 0 ? SqlDecimal.Null : ToDecimal(p); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlDecimal</c> value.</summary>
 		public static SqlDecimal ToSqlDecimal(Byte[]     p) { return p == null || p.Length == 0 ? SqlDecimal.Null : ToDecimal(p); }
 
@@ -7066,7 +6937,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlDecimal((Binary)    p);
 			if (p is Byte[])     return ToSqlDecimal((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlDecimal));
@@ -7083,112 +6953,110 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Boolean         p) { return p ? (SqlDouble)1 : (SqlDouble)0;                                                     }
+		public static SqlDouble ToSqlDouble(Boolean         p) { return p ? (SqlDouble)1 : (SqlDouble)0;                                             }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Byte            p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Byte            p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Char            p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Char            p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(DateTime        p) { return (p - DateTime.MinValue).TotalDays;                                                   }
+		public static SqlDouble ToSqlDouble(DateTime        p) { return (p - DateTime.MinValue).TotalDays;                                           }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(DateTimeOffset  p) { return (p - DateTimeOffset.MinValue).TotalDays;                                             }
+		public static SqlDouble ToSqlDouble(DateTimeOffset  p) { return (p - DateTimeOffset.MinValue).TotalDays;                                     }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Decimal         p) { return checked((Double)p);                                                                  }
+		public static SqlDouble ToSqlDouble(Decimal         p) { return checked((Double)p);                                                          }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Double          p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Double          p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Int16           p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Int16           p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Int32           p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Int32           p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Int64           p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Int64           p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(SByte           p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(SByte           p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Single          p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(Single          p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(String          p) { return p == null? SqlDouble.Null : Double.Parse(p);                                         }
+		public static SqlDouble ToSqlDouble(String          p) { return p == null? SqlDouble.Null : Double.Parse(p);                                 }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(TimeSpan        p) { return p.TotalDays;                                                                         }
+		public static SqlDouble ToSqlDouble(TimeSpan        p) { return p.TotalDays;                                                                 }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(UInt16          p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(UInt16          p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(UInt32          p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(UInt32          p) { return p;                                                                           }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(UInt64          p) { return p;                                                                                   }
+		public static SqlDouble ToSqlDouble(UInt64          p) { return p;                                                                           }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Boolean?        p) { return p.HasValue && p.Value ? (SqlDouble)1: (SqlDouble)0;                                  }
+		public static SqlDouble ToSqlDouble(Boolean?        p) { return p.HasValue && p.Value ? (SqlDouble)1: (SqlDouble)0;                          }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Byte?           p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Byte?           p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Char?           p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Char?           p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).TotalDays : SqlDouble.Null;               }
+		public static SqlDouble ToSqlDouble(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).TotalDays : SqlDouble.Null;       }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTimeOffset.MinValue).TotalDays : SqlDouble.Null;         }
+		public static SqlDouble ToSqlDouble(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTimeOffset.MinValue).TotalDays : SqlDouble.Null; }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Decimal?        p) { return p.HasValue ? checked((Double)p.Value) : SqlDouble.Null;                              }
+		public static SqlDouble ToSqlDouble(Decimal?        p) { return p.HasValue ? checked((Double)p.Value) : SqlDouble.Null;                      }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Double?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Double?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Int16?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Int16?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Int32?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Int32?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Int64?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Int64?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(SByte?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(SByte?          p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Single?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(Single?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(TimeSpan?       p) { return p.HasValue ? p.Value.TotalDays : SqlDouble.Null;                                     }
+		public static SqlDouble ToSqlDouble(TimeSpan?       p) { return p.HasValue ? p.Value.TotalDays : SqlDouble.Null;                             }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(UInt16?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(UInt16?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(UInt32?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(UInt32?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlDouble</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlDouble ToSqlDouble(UInt64?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                               }
+		public static SqlDouble ToSqlDouble(UInt64?         p) { return p.HasValue ? p.Value : SqlDouble.Null;                                       }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlBoolean      p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlBoolean      p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlByte         p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlByte         p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlDateTime     p) { return p.IsNull? SqlDouble.Null: ToDouble(p.Value);                                         }
+		public static SqlDouble ToSqlDouble(SqlDateTime     p) { return p.IsNull? SqlDouble.Null: ToDouble(p.Value);                                 }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlDecimal      p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlDecimal      p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlInt16        p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlInt16        p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlInt32        p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlInt32        p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlInt64        p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlInt64        p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlMoney        p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlMoney        p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlSingle       p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlSingle       p) { return p.ToSqlDouble();                                                             }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(SqlString       p) { return p.ToSqlDouble();                                                                     }
+		public static SqlDouble ToSqlDouble(SqlString       p) { return p.ToSqlDouble();                                                             }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Binary          p) { return p == null || p.Length == 0 ? SqlDouble.Null : BitConverter.ToDouble(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlDouble</c> value.</summary>
-		public static SqlDouble ToSqlDouble(Byte[]          p) { return p == null || p.Length == 0 ? SqlDouble.Null : BitConverter.ToDouble(p, 0);           }
+		public static SqlDouble ToSqlDouble(Byte[]          p) { return p == null || p.Length == 0 ? SqlDouble.Null : BitConverter.ToDouble(p, 0);   }
 
 		// From Object
 		//
@@ -7268,7 +7136,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToSqlDouble((Binary)         p);
 			if (p is Byte[])          return ToSqlDouble((Byte[])         p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlDouble));
@@ -7285,30 +7152,28 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Guid</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(Guid      p) { return p;                                                }
+		public static SqlGuid ToSqlGuid(Guid      p) { return p;                                              }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(String    p) { return p == null ? SqlGuid.Null : new Guid(p);           }
+		public static SqlGuid ToSqlGuid(String    p) { return p == null ? SqlGuid.Null : new Guid(p);         }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Guid?</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(Guid?     p) { return p.HasValue ? p.Value : SqlGuid.Null;              }
+		public static SqlGuid ToSqlGuid(Guid?     p) { return p.HasValue ? p.Value : SqlGuid.Null;            }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBinary</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(SqlBinary p) { return p.IsNull  ? SqlGuid.Null : p.ToSqlGuid().Value;   }
+		public static SqlGuid ToSqlGuid(SqlBinary p) { return p.IsNull  ? SqlGuid.Null : p.ToSqlGuid().Value; }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(SqlString p) { return p.IsNull  ? SqlGuid.Null : new Guid(p.Value);     }
+		public static SqlGuid ToSqlGuid(SqlString p) { return p.IsNull  ? SqlGuid.Null : new Guid(p.Value);   }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(Binary    p) { return p == null ? SqlGuid.Null : new Guid(p.ToArray()); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(Byte[]    p) { return p == null ? SqlGuid.Null : new Guid(p);           }
+		public static SqlGuid ToSqlGuid(Byte[]    p) { return p == null ? SqlGuid.Null : new Guid(p);         }
 		/// <summary>Converts the value from <c>Type</c> to an equivalent <c>SqlGuid</c> value.</summary>
-		public static SqlGuid ToSqlGuid(Type      p) { return p == null ? SqlGuid.Null : p.GUID;                }
+		public static SqlGuid ToSqlGuid(Type      p) { return p == null ? SqlGuid.Null : p.GUID;              }
 
 		// From Object
 		//
@@ -7350,7 +7215,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)    return ToSqlGuid((Binary)   p);
 			if (p is Byte[])    return ToSqlGuid((Byte[])   p);
 			if (p is Type)      return ToSqlGuid((Type)     p);
 
@@ -7368,98 +7232,96 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Boolean    p) { return p ? (SqlInt16)1 : (SqlInt16)0;                                                     }
+		public static SqlInt16 ToSqlInt16(Boolean    p) { return p ? (SqlInt16)1 : (SqlInt16)0;                                           }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Byte       p) { return p;                                                                                 }
+		public static SqlInt16 ToSqlInt16(Byte       p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Char       p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(Char       p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Decimal    p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(Decimal    p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Double     p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(Double     p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Int16      p) { return p;                                                                                 }
+		public static SqlInt16 ToSqlInt16(Int16      p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Int32      p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(Int32      p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Int64      p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(Int64      p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(SByte      p) { return p;                                                                                 }
+		public static SqlInt16 ToSqlInt16(SByte      p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Single     p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(Single     p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(String     p) { return p == null? SqlInt16.Null : Int16.Parse(p);                                         }
+		public static SqlInt16 ToSqlInt16(String     p) { return p == null? SqlInt16.Null : Int16.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(UInt16     p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(UInt16     p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(UInt32     p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(UInt32     p) { return checked((Int16)p);                                                       }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(UInt64     p) { return checked((Int16)p);                                                                 }
+		public static SqlInt16 ToSqlInt16(UInt64     p) { return checked((Int16)p);                                                       }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Boolean?   p) { return p.HasValue && p.Value ? (SqlInt16)1: (SqlInt16)0;                                  }
+		public static SqlInt16 ToSqlInt16(Boolean?   p) { return p.HasValue && p.Value ? (SqlInt16)1: (SqlInt16)0;                        }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Byte?      p) { return p.HasValue ? p.Value : SqlInt16.Null;                                              }
+		public static SqlInt16 ToSqlInt16(Byte?      p) { return p.HasValue ? p.Value : SqlInt16.Null;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Char?      p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(Char?      p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Decimal?   p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(Decimal?   p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Double?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(Double?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Int16?     p) { return p.HasValue ? p.Value : SqlInt16.Null;                                              }
+		public static SqlInt16 ToSqlInt16(Int16?     p) { return p.HasValue ? p.Value : SqlInt16.Null;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Int32?     p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(Int32?     p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Int64?     p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(Int64?     p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(SByte?     p) { return p.HasValue ? p.Value : SqlInt16.Null;                                              }
+		public static SqlInt16 ToSqlInt16(SByte?     p) { return p.HasValue ? p.Value : SqlInt16.Null;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Single?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(Single?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(UInt16?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(UInt16?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(UInt32?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(UInt32?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlInt16</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt16 ToSqlInt16(UInt64?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                              }
+		public static SqlInt16 ToSqlInt16(UInt64?    p) { return p.HasValue ? checked((Int16)p.Value) : SqlInt16.Null;                    }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlBoolean p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlBoolean p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlByte    p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlByte    p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlDecimal p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlDecimal p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlDouble  p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlDouble  p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlInt32   p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlInt32   p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlInt64   p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlInt64   p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlMoney   p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlMoney   p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlSingle  p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlSingle  p) { return p.ToSqlInt16();                                                          }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(SqlString  p) { return p.ToSqlInt16();                                                                    }
+		public static SqlInt16 ToSqlInt16(SqlString  p) { return p.ToSqlInt16();                                                          }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Binary     p) { return p == null || p.Length == 0 ? SqlInt16.Null : BitConverter.ToInt16(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlInt16</c> value.</summary>
-		public static SqlInt16 ToSqlInt16(Byte[]     p) { return p == null || p.Length == 0 ? SqlInt16.Null : BitConverter.ToInt16(p, 0);           }
+		public static SqlInt16 ToSqlInt16(Byte[]     p) { return p == null || p.Length == 0 ? SqlInt16.Null : BitConverter.ToInt16(p, 0); }
 
 		// From Object
 		//
@@ -7529,7 +7391,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlInt16((Binary)    p);
 			if (p is Byte[])     return ToSqlInt16((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlInt16));
@@ -7546,98 +7407,96 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Boolean    p) { return p ? (SqlInt32)1 : (SqlInt32)0;                                                     }
+		public static SqlInt32 ToSqlInt32(Boolean    p) { return p ? (SqlInt32)1 : (SqlInt32)0;                                           }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Byte       p) { return p;                                                                                 }
+		public static SqlInt32 ToSqlInt32(Byte       p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Char       p) { return p;                                                                                 }
+		public static SqlInt32 ToSqlInt32(Char       p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Decimal    p) { return checked((Int32)p);                                                                 }
+		public static SqlInt32 ToSqlInt32(Decimal    p) { return checked((Int32)p);                                                       }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Double     p) { return checked((Int32)p);                                                                 }
+		public static SqlInt32 ToSqlInt32(Double     p) { return checked((Int32)p);                                                       }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Int16      p) { return p;                                                                                 }
+		public static SqlInt32 ToSqlInt32(Int16      p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Int32      p) { return p;                                                                                 }
+		public static SqlInt32 ToSqlInt32(Int32      p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Int64      p) { return checked((Int32)p);                                                                 }
+		public static SqlInt32 ToSqlInt32(Int64      p) { return checked((Int32)p);                                                       }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(SByte      p) { return p;                                                                                 }
+		public static SqlInt32 ToSqlInt32(SByte      p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Single     p) { return checked((Int32)p);                                                                 }
+		public static SqlInt32 ToSqlInt32(Single     p) { return checked((Int32)p);                                                       }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(String     p) { return p == null? SqlInt32.Null : Int32.Parse(p);                                         }
+		public static SqlInt32 ToSqlInt32(String     p) { return p == null? SqlInt32.Null : Int32.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(UInt16     p) { return p;                                                                                 }
+		public static SqlInt32 ToSqlInt32(UInt16     p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(UInt32     p) { return checked((Int32)p);                                                                 }
+		public static SqlInt32 ToSqlInt32(UInt32     p) { return checked((Int32)p);                                                       }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(UInt64     p) { return checked((Int32)p);                                                                 }
+		public static SqlInt32 ToSqlInt32(UInt64     p) { return checked((Int32)p);                                                       }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Boolean?   p) { return p.HasValue && p.Value ? (SqlInt32)1: (SqlInt32)0;                                  }
+		public static SqlInt32 ToSqlInt32(Boolean?   p) { return p.HasValue && p.Value ? (SqlInt32)1: (SqlInt32)0;                        }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Byte?      p) { return p.HasValue ? p.Value : SqlInt32.Null;                                              }
+		public static SqlInt32 ToSqlInt32(Byte?      p) { return p.HasValue ? p.Value : SqlInt32.Null;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Char?      p) { return p.HasValue ? p.Value : SqlInt32.Null;                                              }
+		public static SqlInt32 ToSqlInt32(Char?      p) { return p.HasValue ? p.Value : SqlInt32.Null;                                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Decimal?   p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                              }
+		public static SqlInt32 ToSqlInt32(Decimal?   p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Double?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                              }
+		public static SqlInt32 ToSqlInt32(Double?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Int16?     p) { return p.HasValue ? p.Value : SqlInt32.Null;                                              }
+		public static SqlInt32 ToSqlInt32(Int16?     p) { return p.HasValue ? p.Value : SqlInt32.Null;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Int32?     p) { return p.HasValue ? p.Value : SqlInt32.Null;                                              }
+		public static SqlInt32 ToSqlInt32(Int32?     p) { return p.HasValue ? p.Value : SqlInt32.Null;                                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Int64?     p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                              }
+		public static SqlInt32 ToSqlInt32(Int64?     p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(SByte?     p) { return p.HasValue ? p.Value : SqlInt32.Null;                                              }
+		public static SqlInt32 ToSqlInt32(SByte?     p) { return p.HasValue ? p.Value : SqlInt32.Null;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Single?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                              }
+		public static SqlInt32 ToSqlInt32(Single?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                    }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(UInt16?    p) { return p.HasValue ? p.Value : SqlInt32.Null;                                              }
+		public static SqlInt32 ToSqlInt32(UInt16?    p) { return p.HasValue ? p.Value : SqlInt32.Null;                                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(UInt32?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                              }
+		public static SqlInt32 ToSqlInt32(UInt32?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlInt32</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt32 ToSqlInt32(UInt64?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                              }
+		public static SqlInt32 ToSqlInt32(UInt64?    p) { return p.HasValue ? checked((Int32)p.Value) : SqlInt32.Null;                    }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlBoolean p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlBoolean p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlByte    p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlByte    p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlDecimal p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlDecimal p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlDouble  p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlDouble  p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlInt16   p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlInt16   p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlInt64   p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlInt64   p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlMoney   p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlMoney   p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlSingle  p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlSingle  p) { return p.ToSqlInt32();                                                          }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(SqlString  p) { return p.ToSqlInt32();                                                                    }
+		public static SqlInt32 ToSqlInt32(SqlString  p) { return p.ToSqlInt32();                                                          }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Binary     p) { return p == null || p.Length == 0 ? SqlInt32.Null : BitConverter.ToInt32(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlInt32</c> value.</summary>
-		public static SqlInt32 ToSqlInt32(Byte[]     p) { return p == null || p.Length == 0 ? SqlInt32.Null : BitConverter.ToInt32(p, 0);           }
+		public static SqlInt32 ToSqlInt32(Byte[]     p) { return p == null || p.Length == 0 ? SqlInt32.Null : BitConverter.ToInt32(p, 0); }
 
 		// From Object
 		//
@@ -7707,7 +7566,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlInt32((Binary)    p);
 			if (p is Byte[])     return ToSqlInt32((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlInt32));
@@ -7724,112 +7582,110 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Boolean         p) { return p ? (SqlInt64)1 : (SqlInt64)0;                                                     }
+		public static SqlInt64 ToSqlInt64(Boolean         p) { return p ? (SqlInt64)1 : (SqlInt64)0;                                           }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Byte            p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(Byte            p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Char            p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(Char            p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>DateTime</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(DateTime        p) { return (p - DateTime.MinValue).Ticks;                                                     }
+		public static SqlInt64 ToSqlInt64(DateTime        p) { return (p - DateTime.MinValue).Ticks;                                           }
 		/// <summary>Converts the value from <c>DateTimeOffset</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(DateTimeOffset  p) { return (p - DateTime.MinValue).Ticks;                                                     }
+		public static SqlInt64 ToSqlInt64(DateTimeOffset  p) { return (p - DateTime.MinValue).Ticks;                                           }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Decimal         p) { return checked((Int64)p);                                                                 }
+		public static SqlInt64 ToSqlInt64(Decimal         p) { return checked((Int64)p);                                                       }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Double          p) { return checked((Int64)p);                                                                 }
+		public static SqlInt64 ToSqlInt64(Double          p) { return checked((Int64)p);                                                       }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Int16           p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(Int16           p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Int32           p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(Int32           p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Int64           p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(Int64           p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(SByte           p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(SByte           p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Single          p) { return checked((Int64)p);                                                                 }
+		public static SqlInt64 ToSqlInt64(Single          p) { return checked((Int64)p);                                                       }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(String          p) { return p == null? SqlInt64.Null : Int64.Parse(p);                                         }
+		public static SqlInt64 ToSqlInt64(String          p) { return p == null? SqlInt64.Null : Int64.Parse(p);                               }
 		/// <summary>Converts the value from <c>TimeSpan</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(TimeSpan        p) { return p.Ticks;                                                                           }
+		public static SqlInt64 ToSqlInt64(TimeSpan        p) { return p.Ticks;                                                                 }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(UInt16          p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(UInt16          p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(UInt32          p) { return p;                                                                                 }
+		public static SqlInt64 ToSqlInt64(UInt32          p) { return p;                                                                       }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(UInt64          p) { return checked((Int64)p);                                                                 }
+		public static SqlInt64 ToSqlInt64(UInt64          p) { return checked((Int64)p);                                                       }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Boolean?        p) { return p.HasValue && p.Value ? (SqlInt64)1: (SqlInt64)0;                                  }
+		public static SqlInt64 ToSqlInt64(Boolean?        p) { return p.HasValue && p.Value ? (SqlInt64)1: (SqlInt64)0;                        }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Byte?           p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(Byte?           p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Char?           p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(Char?           p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>DateTime?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                              }
+		public static SqlInt64 ToSqlInt64(DateTime?       p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                    }
 		/// <summary>Converts the value from <c>DateTimeOffset?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                              }
+		public static SqlInt64 ToSqlInt64(DateTimeOffset? p) { return p.HasValue ? (p.Value - DateTime.MinValue).Ticks : 0;                    }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Decimal?        p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                              }
+		public static SqlInt64 ToSqlInt64(Decimal?        p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Double?         p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                              }
+		public static SqlInt64 ToSqlInt64(Double?         p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Int16?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(Int16?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Int32?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(Int32?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Int64?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(Int64?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(SByte?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(SByte?          p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Single?         p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                              }
+		public static SqlInt64 ToSqlInt64(Single?         p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                    }
 		/// <summary>Converts the value from <c>TimeSpan?</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(TimeSpan?       p) { return p.HasValue ? p.Value.Ticks : 0;                                                    }
+		public static SqlInt64 ToSqlInt64(TimeSpan?       p) { return p.HasValue ? p.Value.Ticks : 0;                                          }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(UInt16?         p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(UInt16?         p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(UInt32?         p) { return p.HasValue ? p.Value : SqlInt64.Null;                                              }
+		public static SqlInt64 ToSqlInt64(UInt32?         p) { return p.HasValue ? p.Value : SqlInt64.Null;                                    }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlInt64</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlInt64 ToSqlInt64(UInt64?         p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                              }
+		public static SqlInt64 ToSqlInt64(UInt64?         p) { return p.HasValue ? checked((Int64)p.Value) : SqlInt64.Null;                    }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlBoolean      p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlBoolean      p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlByte         p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlByte         p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlDateTime</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlDateTime     p) { return p.IsNull? SqlInt64.Null: ToInt64(p.Value);                                         }
+		public static SqlInt64 ToSqlInt64(SqlDateTime     p) { return p.IsNull? SqlInt64.Null: ToInt64(p.Value);                               }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlDecimal      p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlDecimal      p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlDouble       p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlDouble       p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlInt16        p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlInt16        p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlInt32        p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlInt32        p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlMoney        p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlMoney        p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlSingle</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlSingle       p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlSingle       p) { return p.ToSqlInt64();                                                          }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(SqlString       p) { return p.ToSqlInt64();                                                                    }
+		public static SqlInt64 ToSqlInt64(SqlString       p) { return p.ToSqlInt64();                                                          }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Binary          p) { return p == null || p.Length == 0 ? SqlInt64.Null : BitConverter.ToInt64(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlInt64</c> value.</summary>
-		public static SqlInt64 ToSqlInt64(Byte[]          p) { return p == null || p.Length == 0 ? SqlInt64.Null : BitConverter.ToInt64(p, 0);           }
+		public static SqlInt64 ToSqlInt64(Byte[]          p) { return p == null || p.Length == 0 ? SqlInt64.Null : BitConverter.ToInt64(p, 0); }
 
 		// From Object
 		//
@@ -7909,7 +7765,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToSqlInt64((Binary)         p);
 			if (p is Byte[])          return ToSqlInt64((Byte[])         p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlInt64));
@@ -8014,8 +7869,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlMoney</c> value.</summary>
-		public static SqlMoney ToSqlMoney(Binary     p) { return p == null || p.Length == 0 ? SqlMoney.Null : ToDecimal(p); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlMoney</c> value.</summary>
 		public static SqlMoney ToSqlMoney(Byte[]     p) { return p == null || p.Length == 0 ? SqlMoney.Null : ToDecimal(p); }
 
@@ -8087,7 +7940,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlMoney((Binary)    p);
 			if (p is Byte[])     return ToSqlMoney((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlMoney));
@@ -8104,98 +7956,96 @@ namespace BLToolkit.Common
 		// Simple Types
 		//
 		/// <summary>Converts the value from <c>Boolean</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Boolean    p) { return p ? (SqlSingle)1 : (SqlSingle)0;                                                     }
+		public static SqlSingle ToSqlSingle(Boolean    p) { return p ? (SqlSingle)1 : (SqlSingle)0;                                           }
 		/// <summary>Converts the value from <c>Byte</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Byte       p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(Byte       p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>Char</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Char       p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(Char       p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>Decimal</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Decimal    p) { return checked((Single)p);                                                                  }
+		public static SqlSingle ToSqlSingle(Decimal    p) { return checked((Single)p);                                                        }
 		/// <summary>Converts the value from <c>Double</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Double     p) { return checked((Single)p);                                                                  }
+		public static SqlSingle ToSqlSingle(Double     p) { return checked((Single)p);                                                        }
 		/// <summary>Converts the value from <c>Int16</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Int16      p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(Int16      p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>Int32</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Int32      p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(Int32      p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>Int64</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Int64      p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(Int64      p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>SByte</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(SByte      p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(SByte      p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>Single</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Single     p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(Single     p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(String     p) { return p == null? SqlSingle.Null : Single.Parse(p);                                         }
+		public static SqlSingle ToSqlSingle(String     p) { return p == null? SqlSingle.Null : Single.Parse(p);                               }
 		/// <summary>Converts the value from <c>UInt16</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(UInt16     p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(UInt16     p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>UInt32</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(UInt32     p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(UInt32     p) { return p;                                                                         }
 		/// <summary>Converts the value from <c>UInt64</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(UInt64     p) { return p;                                                                                   }
+		public static SqlSingle ToSqlSingle(UInt64     p) { return p;                                                                         }
 
 		// Nullable Types
 		//
 		/// <summary>Converts the value from <c>Boolean?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Boolean?   p) { return p.HasValue && p.Value ? (SqlSingle)1: (SqlSingle)0;                                  }
+		public static SqlSingle ToSqlSingle(Boolean?   p) { return p.HasValue && p.Value ? (SqlSingle)1: (SqlSingle)0;                        }
 		/// <summary>Converts the value from <c>Byte?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Byte?      p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(Byte?      p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>Char?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Char?      p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(Char?      p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>Decimal?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Decimal?   p) { return p.HasValue ? checked((Single)p.Value) : SqlSingle.Null;                              }
+		public static SqlSingle ToSqlSingle(Decimal?   p) { return p.HasValue ? checked((Single)p.Value) : SqlSingle.Null;                    }
 		/// <summary>Converts the value from <c>Double?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Double?    p) { return p.HasValue ? checked((Single)p.Value) : SqlSingle.Null;                              }
+		public static SqlSingle ToSqlSingle(Double?    p) { return p.HasValue ? checked((Single)p.Value) : SqlSingle.Null;                    }
 		/// <summary>Converts the value from <c>Int16?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Int16?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(Int16?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>Int32?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Int32?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(Int32?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>Int64?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Int64?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(Int64?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>SByte?</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(SByte?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(SByte?     p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>Single?</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Single?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(Single?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>UInt16?</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(UInt16?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(UInt16?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>UInt32?</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(UInt32?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(UInt32?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>SqlSingle</c> value.</summary>
 		[CLSCompliant(false)]
-		public static SqlSingle ToSqlSingle(UInt64?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                               }
+		public static SqlSingle ToSqlSingle(UInt64?    p) { return p.HasValue ? p.Value : SqlSingle.Null;                                     }
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlBoolean</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlBoolean p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlBoolean p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlByte</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlByte    p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlByte    p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlDecimal</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlDecimal p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlDecimal p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlDouble</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlDouble  p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlDouble  p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlInt16</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlInt16   p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlInt16   p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlInt32</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlInt32   p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlInt32   p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlInt64</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlInt64   p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlInt64   p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlMoney</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlMoney   p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlMoney   p) { return p.ToSqlSingle();                                                           }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(SqlString  p) { return p.ToSqlSingle();                                                                     }
+		public static SqlSingle ToSqlSingle(SqlString  p) { return p.ToSqlSingle();                                                           }
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Binary     p) { return p == null || p.Length == 0 ? SqlSingle.Null : BitConverter.ToSingle(p.ToArray(), 0); }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlSingle</c> value.</summary>
-		public static SqlSingle ToSqlSingle(Byte[]     p) { return p == null || p.Length == 0 ? SqlSingle.Null : BitConverter.ToSingle(p, 0);           }
+		public static SqlSingle ToSqlSingle(Byte[]     p) { return p == null || p.Length == 0 ? SqlSingle.Null : BitConverter.ToSingle(p, 0); }
 
 		// From Object
 		//
@@ -8265,7 +8115,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)     return ToSqlSingle((Binary)    p);
 			if (p is Byte[])     return ToSqlSingle((Byte[])    p);
 
 			throw CreateInvalidCastException(p.GetType(), typeof(SqlSingle));
@@ -8392,8 +8241,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlString</c> value.</summary>
-		public static SqlString ToSqlString(Binary          p) { return ToSqlString(p.ToArray());                                                         }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlString</c> value.</summary>
 		public static SqlString ToSqlString(Byte[]          p) { return p == null ? SqlString.Null : System.Text.Encoding.UTF8.GetString(p, 0, p.Length); }
 		/// <summary>Converts the value from <c>Type</c> to an equivalent <c>SqlString</c> value.</summary>
@@ -8485,7 +8332,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToSqlString((Binary)         p);
 			if (p is Byte[])          return ToSqlString((Byte[])         p);
 			if (p is Type)            return ToSqlString((Type)           p);
 			if (p is XElement)        return ToSqlString((XElement)       p);
@@ -8520,8 +8366,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>SqlXml</c> value.</summary>
-		public static SqlXml ToSqlXml(Binary      p) { return p == null ? SqlXml.Null : new SqlXml(new MemoryStream(p.ToArray()));                             }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>SqlXml</c> value.</summary>
 		public static SqlXml ToSqlXml(Byte[]      p) { return p == null ? SqlXml.Null : new SqlXml(new MemoryStream(p));                                       }
 		/// <summary>Converts the value from <c>Char[]</c> to an equivalent <c>SqlXml</c> value.</summary>
@@ -8566,7 +8410,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)      return ToSqlXml((Binary)     p);
 			if (p is Byte[])      return ToSqlXml((Byte[])     p);
 			if (p is Char[])      return ToSqlXml((Char[])     p);
 			if (p is Stream)      return ToSqlXml((Stream)     p);
@@ -8584,10 +8427,6 @@ namespace BLToolkit.Common
 		#endregion
 
 		#region Other Types
-
-		#region Binary
-
-		#endregion
 
 		#region Byte[]
 
@@ -8680,11 +8519,6 @@ namespace BLToolkit.Common
 		/// <summary>Converts the value from <c>UInt64?</c> to an equivalent <c>Byte[]</c> value.</summary>
 		[CLSCompliant(false)]
 		public static Byte[] ToByteArray(UInt64?         p) { return p.HasValue ? ToByteArray(p.Value) : (Byte[])null;                 }
-
-		// Other Types
-		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Byte[]</c> value.</summary>
-		public static Byte[] ToByteArray(Binary          p) { return p == null ? (Byte[])null : p.ToArray();                           }
 
 #if !SILVERLIGHT
 
@@ -8791,7 +8625,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)          return ToByteArray((Binary)         p);
 			if (p is Char[])          return ToByteArray((Char[])         p);
 			if (p is Stream)          return ToByteArray((Stream)         p);
 
@@ -8841,8 +8674,6 @@ namespace BLToolkit.Common
 
 		// Other Types
 		//
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Stream</c> value.</summary>
-		public static Stream ToStream(Binary    p) { return p == null ? Stream.Null : new MemoryStream(p.ToArray());            }
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Stream</c> value.</summary>
 		public static Stream ToStream(Byte[]    p) { return p == null ? Stream.Null : new MemoryStream(p);                      }
 
@@ -8883,7 +8714,6 @@ namespace BLToolkit.Common
 
 			// Other Types
 			//
-			if (p is Binary)    return ToStream((Binary)   p);
 			if (p is Byte[])    return ToStream((Byte[])   p);
 
 #if !SILVERLIGHT
@@ -8910,41 +8740,37 @@ namespace BLToolkit.Common
 		//
 #if !SILVERLIGHT
 		/// <summary>Converts the value from <c>Guid</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(Guid      p) { return p == Guid.Empty ? (Type)null : Type.GetTypeFromCLSID(p);             }
+		public static Type ToType(Guid      p) { return p == Guid.Empty ? (Type)null : Type.GetTypeFromCLSID(p);   }
 #endif
 		/// <summary>Converts the value from <c>String</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(String    p) { return p == null ? (Type)null : Type.GetType(p);                            }
+		public static Type ToType(String    p) { return p == null ? (Type)null : Type.GetType(p);                  }
 
 		// Nullable Types
 		//
 #if !SILVERLIGHT
 		/// <summary>Converts the value from <c>Guid?</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(Guid?     p) { return p.HasValue ? Type.GetTypeFromCLSID(p.Value) : (Type)null;            }
+		public static Type ToType(Guid?     p) { return p.HasValue ? Type.GetTypeFromCLSID(p.Value) : (Type)null;  }
 #endif
 
 		// Other Types
 		//
 #if !SILVERLIGHT
-		/// <summary>Converts the value from <c>Binary</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(Binary    p) { return p == null ? (Type)null : Type.GetTypeFromCLSID(ToGuid(p.ToArray())); }
-#endif
-#if !SILVERLIGHT
 		/// <summary>Converts the value from <c>Byte[]</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(Byte[]    p) { return p == null ? (Type)null : Type.GetTypeFromCLSID(ToGuid(p));           }
+		public static Type ToType(Byte[]    p) { return p == null ? (Type)null : Type.GetTypeFromCLSID(ToGuid(p)); }
 #endif
 		/// <summary>Converts the value from <c>Char[]</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(Char[]    p) { return p == null ? (Type)null : Type.GetType(new string(p));                }
+		public static Type ToType(Char[]    p) { return p == null ? (Type)null : Type.GetType(new string(p));      }
 
 #if !SILVERLIGHT
 
 		// Sql Types
 		//
 		/// <summary>Converts the value from <c>SqlChars</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(SqlChars  p) { return p.IsNull ? (Type)null : Type.GetType(new string(p.Value));           }
+		public static Type ToType(SqlChars  p) { return p.IsNull ? (Type)null : Type.GetType(new string(p.Value)); }
 		/// <summary>Converts the value from <c>SqlGuid</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(SqlGuid   p) { return p.IsNull ? (Type)null : Type.GetTypeFromCLSID(p.Value);              }
+		public static Type ToType(SqlGuid   p) { return p.IsNull ? (Type)null : Type.GetTypeFromCLSID(p.Value);    }
 		/// <summary>Converts the value from <c>SqlString</c> to an equivalent <c>Type</c> value.</summary>
-		public static Type ToType(SqlString p) { return p.IsNull ? (Type)null : Type.GetType(p.Value);                       }
+		public static Type ToType(SqlString p) { return p.IsNull ? (Type)null : Type.GetType(p.Value);             }
 
 #endif
 
@@ -8985,9 +8811,6 @@ namespace BLToolkit.Common
 			// Other Types
 			//
 #if !SILVERLIGHT
-			if (p is Binary)    return ToType((Binary)   p);
-#endif
-#if !SILVERLIGHT
 			if (p is Byte[])    return ToType((Byte[])   p);
 #endif
 			if (p is Char[])    return ToType((Char[])   p);
@@ -9007,6 +8830,14 @@ namespace BLToolkit.Common
 
 			throw CreateInvalidCastException(p.GetType(), typeof(Type));
 		}
+
+		#endregion
+
+		#region XElement
+
+#if !SILVERLIGHT
+
+#endif
 
 		#endregion
 

@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Linq;
 using System.Data.SqlTypes;
 using System.Diagnostics;
 using System.Linq;
@@ -167,7 +166,6 @@ namespace BLToolkit.Mapping
 			DefaultStringNullValue         = (String)        GetNullValue(typeof(String));
 			DefaultDateTimeNullValue       = (DateTime)      GetNullValue(typeof(DateTime));
 			DefaultDateTimeOffsetNullValue = (DateTimeOffset)GetNullValue(typeof(DateTimeOffset));
-			DefaultLinqBinaryNullValue     = (Binary)        GetNullValue(typeof(Binary));
 			DefaultDecimalNullValue        = (Decimal)       GetNullValue(typeof(Decimal));
 			DefaultGuidNullValue           = (Guid)          GetNullValue(typeof(Guid));
 			DefaultStreamNullValue         = (Stream)        GetNullValue(typeof(Stream));
@@ -349,17 +347,6 @@ namespace BLToolkit.Mapping
 				value is DateTimeOffset? (DateTimeOffset)value:
 				value == null || value is DBNull? DefaultDateTimeOffsetNullValue:
 					Convert.ToDateTimeOffset(value);
-		}
-
-		public Binary DefaultLinqBinaryNullValue { get; set; }
-
-		public virtual Binary ConvertToLinqBinary(object value)
-		{
-			return
-				value is Binary ? (Binary)value:
-				value is byte[] ? new Binary((byte[])value) : 
-				value == null || value is DBNull? DefaultLinqBinaryNullValue:
-					Convert.ToLinqBinary(value);
 		}
 
 		public decimal DefaultDecimalNullValue { get; set; }
@@ -924,7 +911,6 @@ namespace BLToolkit.Mapping
             if (typeof(XElement)       == conversionType) return ConvertToXElement      (value);
 #endif
 			if (typeof(byte[])         == conversionType) return ConvertToByteArray     (value);
-			if (typeof(Binary)         == conversionType) return ConvertToLinqBinary    (value);
 			if (typeof(DateTimeOffset) == conversionType) return ConvertToDateTimeOffset(value);
 			if (typeof(char[])         == conversionType) return ConvertToCharArray     (value);
 			if (typeof(TimeSpan)       == conversionType) return ConvertToTimeSpan      (value);

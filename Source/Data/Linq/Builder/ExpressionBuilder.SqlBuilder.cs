@@ -1231,10 +1231,6 @@ namespace BLToolkit.Data.Linq.Builder
 
 							predicate = ConvertInPredicate(context, expr);
 						}
-#if !SILVERLIGHT
-						else if (e.Method == ReflectionHelper.Functions.String.Like11) predicate = ConvertLikePredicate(context, e);
-						else if (e.Method == ReflectionHelper.Functions.String.Like12) predicate = ConvertLikePredicate(context, e);
-#endif
 						else if (e.Method == ReflectionHelper.Functions.String.Like21) predicate = ConvertLikePredicate(context, e);
 						else if (e.Method == ReflectionHelper.Functions.String.Like22) predicate = ConvertLikePredicate(context, e);
 

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Data.Linq;
 using System.Linq;
 
 namespace BLToolkit.Data.DataProvider
@@ -324,15 +323,7 @@ namespace BLToolkit.Data.DataProvider
 
 		public virtual void SetParameterValue(IDbDataParameter parameter, object value)
 		{
-			if (value is Binary)
-			{
-				var arr = ((Binary)value).ToArray();
-
-				parameter.Value  = arr;
-				parameter.DbType = DbType.Binary;
-				parameter.Size   = arr.Length;
-			}
-			else if (value is System.Xml.XmlDocument)
+			if (value is System.Xml.XmlDocument)
 			{
 				parameter.Value = ((System.Xml.XmlDocument)value).OuterXml;
 				parameter.DbType = DbType.Xml;
@@ -369,7 +360,7 @@ namespace BLToolkit.Data.DataProvider
 
 		public virtual DbType GetDbType(Type systemType)
 		{
-			if (systemType == typeof(Binary) || systemType == typeof(byte[]))
+			if (systemType == typeof(byte[]))
 				return DbType.Binary;
 
 			return DbType.Object;

@@ -15,9 +15,6 @@ namespace BLToolkit.Reflection.MetadataProvider
 		{
 			AddProvider(new ExtensionMetadataProvider());
 			AddProvider(new AttributeMetadataProvider());
-#if !SILVERLIGHT
-			AddProvider(new LinqMetadataProvider());
-#endif
 		}
 
 		private readonly List<MetadataProviderBase> _list = new List<MetadataProviderBase>(3);

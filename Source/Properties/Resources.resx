@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DbManager_ConnectionTypeMismatch" xml:space="preserve">
     <value>The connection does not match the data provider type.</value>
@@ -291,10 +291,10 @@
   <data name="TypeBuilder_GenericShouldBeSingleTyped" xml:space="preserve">
     <value>Could not build the '{0}' property of the '{1}' type: generic type '{2}' and it's generic parameter types should have only one parameter type.</value>
   </data>
-	<data name="DataProviderVersionResolverBase_InvalidProviderType">
-		<value xml:space="preserve">{0} is not a subclass of {1}</value>
-	</data>
-	<data name="DataProviderVersionResolverBase_ProviderIsNotRegistered">
-		<value xml:space="preserve">{0} ({1}) is not a registered data provider</value>
-	</data>
+  <data name="DataProviderVersionResolverBase_InvalidProviderType" xml:space="preserve">
+    <value>{0} is not a subclass of {1}</value>
+  </data>
+  <data name="DataProviderVersionResolverBase_ProviderIsNotRegistered" xml:space="preserve">
+    <value>{0} ({1}) is not a registered data provider</value>
+  </data>
 </root>

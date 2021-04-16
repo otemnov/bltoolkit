@@ -14,9 +14,6 @@ using System.Xml.Linq;
 
 namespace BLToolkit.Reflection
 {
-#if !SILVERLIGHT && !DATA
-	using EditableObjects;
-#endif
 	using DataAccess;
 	using TypeBuilder;
 
@@ -1218,13 +1215,6 @@ namespace BLToolkit.Reflection
 			if (list == null)
 				return typeOfObject;
 
-#if !SILVERLIGHT && !DATA
-
-			if (list is EditableArrayList)
-				return ((EditableArrayList)list).ItemType;
-
-#endif
-
 			if (list is Array)
 				return list.GetType().GetElementType();
 
@@ -1372,7 +1362,6 @@ namespace BLToolkit.Reflection
 
 			return type.IsValueType
 				|| type == typeof(string)
-				|| type == typeof(System.Data.Linq.Binary)
 				|| type == typeof(Stream)
 				|| type == typeof(XmlReader)
 				|| type.GetCustomAttributes(typeof(ScalarAttribute),true).Any() // If the type is a UDT pass it as is

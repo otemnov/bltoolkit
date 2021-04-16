@@ -12,7 +12,6 @@ using System.Xml;
 using System.Xml.Linq;
 #endif
 
-using LinqBinary = System.Data.Linq.Binary;
 using BLToolkit.Reflection;
 
 namespace BLToolkit.Data.Linq
@@ -230,7 +229,6 @@ namespace BLToolkit.Data.Linq
 				{ typeof(XElement),        MethodExpressor(m => m.ConvertToXElement              (null)) },
 #endif
 				{ typeof(Byte[]),          MethodExpressor(m => m.ConvertToByteArray             (null)) },
-				{ typeof(LinqBinary),      MethodExpressor(m => m.ConvertToLinqBinary            (null)) },
 				{ typeof(Char[]),          MethodExpressor(m => m.ConvertToCharArray             (null)) },
 
 				// Nullable Types
@@ -285,11 +283,6 @@ namespace BLToolkit.Data.Linq
 				//public static MethodInfo Contains   = MethodExpressor(s => s.Contains(""));
 				//public static MethodInfo StartsWith = MethodExpressor(s => s.StartsWith(""));
 				//public static MethodInfo EndsWith   = MethodExpressor(s => s.EndsWith(""));
-
-#if !SILVERLIGHT
-				public static MethodInfo Like11     = MethodExpressor(s => System.Data.Linq.SqlClient.SqlMethods.Like("", ""));
-				public static MethodInfo Like12     = MethodExpressor(s => System.Data.Linq.SqlClient.SqlMethods.Like("", "", ' '));
-#endif
 
 				public static MethodInfo Like21     = MethodExpressor(s => Sql.Like(s, ""));
 				public static MethodInfo Like22     = MethodExpressor(s => Sql.Like(s, "", ' '));

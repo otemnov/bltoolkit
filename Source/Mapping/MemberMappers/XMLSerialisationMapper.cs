@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.IO;
-using System.Web.Services.Description;
 using System.Xml;
 using System.Xml.Serialization;
 using BLToolkit.Reflection;

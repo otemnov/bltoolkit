@@ -1,5 +1,6 @@
 using System;
 using System.Configuration.Assemblies;
+using System.Diagnostics;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Security;
@@ -106,9 +107,7 @@ namespace BLToolkit.Reflection.Emit
 				_assemblyBuilder = Thread.GetDomain().DefineDynamicAssembly(_assemblyName, AssemblyBuilderAccess.Run);
 #else
 				_assemblyBuilder =
-					string.IsNullOrEmpty(assemblyDir)?
-					Thread.GetDomain().DefineDynamicAssembly(_assemblyName, AssemblyBuilderAccess.RunAndSave):
-					Thread.GetDomain().DefineDynamicAssembly(_assemblyName, AssemblyBuilderAccess.RunAndSave, assemblyDir);
+					AssemblyBuilder.DefineDynamicAssembly(_assemblyName, AssemblyBuilderAccess.RunAndCollect);
 #endif
 
 				_assemblyBuilder.SetCustomAttribute(BLToolkitAttribute);
@@ -231,12 +230,10 @@ namespace BLToolkit.Reflection.Emit
 		/// </summary>
 		public void Save()
 		{
-#if !SILVERLIGHT
+			Trace.TraceWarning("AssemblyBuilder.Save is called, but not available in netstandard 2");
+			/*if (_assemblyBuilder != null)
+				_assemblyBuilder.Save(ModulePath);*/
 
-			if (_assemblyBuilder != null)
-				_assemblyBuilder.Save(ModulePath);
-
-#endif
 		}
 
 		#region DefineType Overrides

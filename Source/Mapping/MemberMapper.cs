@@ -602,7 +602,6 @@ namespace BLToolkit.Mapping
 #if !SILVERLIGHT
 			if (type == typeof(XmlReader))      return n? new XmlReaderMapper.Nullable()      : new XmlReaderMapper();
 			if (type == typeof(XmlDocument))    return n? new XmlDocumentMapper.Nullable()    : new XmlDocumentMapper();
-            if (type == typeof(XElement))       return n? new XElementMapper.Nullable()       : new XElementMapper();
 #endif
 			return null;
 		}

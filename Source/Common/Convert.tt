@@ -15,9 +15,7 @@ using System.Data.SqlTypes;
 using System.Globalization;
 using System.IO;
 using System.Xml;
-#if !SILVERLIGHT
 using System.Xml.Linq;
-#endif
 
 namespace BLToolkit.Common
 {
@@ -36,7 +34,7 @@ namespace BLToolkit.Common
 					new ToType { Name = "Char",           NullValue = "Configuration.NullableValues.Char"     },
 					new ToType { Name = "DateTime",       NullValue = "Configuration.NullableValues.DateTime" },
 					new ToType { Name = "DateTimeOffset", NullValue = "DateTimeOffset.MinValue"               },
-					new ToType { Name = "Decimal",        NullValue = "Configuration.NullableValues.Decimal", Froms = { { "Byte[]", null }, { "Binary", null } } },
+					new ToType { Name = "Decimal",        NullValue = "Configuration.NullableValues.Decimal", Froms = { { "Byte[]", null } } },
 					new ToType { Name = "Double",         NullValue = "Configuration.NullableValues.Double"   },
 					new ToType { Name = "Guid",           NullValue = "Configuration.NullableValues.Guid"     },
 					new ToType { Name = "Int16",          NullValue = "Configuration.NullableValues.Int16"    },
@@ -95,11 +93,10 @@ namespace BLToolkit.Common
 				}))
 			.Concat(Set(_ => { _.Group = "Other"; }, new[]
 				{
-					new ToType { Name = "Type",        Method = "ToType",        NonSLMethods = { "Guid", "Guid?", "Binary", "Byte[]" } },
+					new ToType { Name = "Type",        Method = "ToType",        NonSLMethods = { "Guid", "Guid?", "Byte[]" } },
 					new ToType { Name = "Stream",      Method = "ToStream",      NullValue = "Stream.Null" },
 					new ToType { Name = "Byte[]",      Method = "ToByteArray",   NonSLMethods = { "DateTime", "DateTime?", "DateTimeOffset", "DateTimeOffset?" }, Froms = { { "Decimal", null }, { "Stream", null }, { "Char[]", null } } },
 					new ToType { Name = "Char[]",      Method = "ToCharArray",                             },
-					new ToType { Name = "Binary",      Method = "ToLinqBinary",                            },
 					new ToType { Name = "XmlReader",   Method = "ToXmlReader",   NonSilverlightable = true },
 					new ToType { Name = "XmlDocument", Method = "ToXmlDocument", NonSilverlightable = true },
 					new ToType { Name = "XElement",    Method = "ToXElement",    NonSilverlightable = true },
@@ -111,7 +108,6 @@ namespace BLToolkit.Common
 		//
 		ConvertFrom("String", "p == null? {2} : p.Length == 1 ? ToBoolean(p[0]) : Boolean.Parse(p)",       "Boolean", "Boolean?", "SqlBoolean");
 		ConvertFrom("Byte[]", "p == null || p.Length == 0 ? {2} : BitConverter.ToBoolean(p, 0)",           "Boolean", "Boolean?", "SqlBoolean");
-		ConvertFrom("Binary", "p == null || p.Length == 0 ? {2} : BitConverter.ToBoolean(p.ToArray(), 0)", "Boolean", "Boolean?", "SqlBoolean");
 
 		ConvertTo    ("Boolean", "p.HasValue && p.Value",                "Boolean?");
 		ConvertToNull("Boolean", "p != 0", "p.HasValue && p.Value != 0", "SByte", "Int16", "Int32", "Int64", "Byte", "UInt16", "UInt32", "UInt64", "Single", "Double", "Decimal");
@@ -144,7 +140,6 @@ namespace BLToolkit.Common
 			new string[] { "String", "Int16", "Int32", "Int64", "Single", "Double", "Decimal", "Money", "Boolean" });
 
 		ConvertFrom("Byte[]", "p == null || p.Length == 0 ? {2} : p[0]",           "Byte", "Byte?", "SqlByte");
-		ConvertFrom("Binary", "p == null || p.Length == 0 ? {2} : p.ToArray()[0]", "Byte", "Byte?", "SqlByte");
 
 		// To Char
 		//
@@ -176,7 +171,6 @@ namespace BLToolkit.Common
 		ConvertFrom("SqlInt64",        "p.IsNull   ? {2} : {3}.MinValue + TimeSpan.FromTicks(p.Value)",             "DateTime", "DateTime?", "SqlDateTime");
 		ConvertFrom("SqlDouble",       "p.IsNull   ? {2} : {3}.MinValue + TimeSpan.FromDays (p.Value)",             "DateTime", "DateTime?", "SqlDateTime");
 		ConvertFrom("Byte[]",          "p == null || p.Length == 0 ? {2} : {3}.FromBinary(ToInt64(p))",             "DateTime", "DateTime?", "SqlDateTime");
-		ConvertFrom("Binary",          "p == null || p.Length == 0 ? {2} : {3}.FromBinary(ToInt64(p.ToArray()))",   "DateTime", "DateTime?", "SqlDateTime");
 
 		// To DateTimeOffset
 		//
@@ -196,7 +190,6 @@ namespace BLToolkit.Common
 		ConvertFrom("SqlInt64",    "p.IsNull   ? {2} : {3}.MinValue + TimeSpan.FromTicks(p.Value)",       "DateTimeOffset", "DateTimeOffset?");
 		ConvertFrom("SqlDouble",   "p.IsNull   ? {2} : {3}.MinValue + TimeSpan.FromDays (p.Value)",       "DateTimeOffset", "DateTimeOffset?");
 		ConvertFrom("Byte[]",      "p == null || p.Length == 0 ? {2} : new {0}(ToDateTime(p))",           "DateTimeOffset", "DateTimeOffset?");
-		ConvertFrom("Binary",      "p == null || p.Length == 0 ? {2} : new {0}(ToDateTime(p.ToArray()))", "DateTimeOffset", "DateTimeOffset?");
 
 		// To Decimal
 		//
@@ -212,7 +205,7 @@ namespace BLToolkit.Common
 			new string[] { "Byte", "Int16", "Int32", "Int64", "Decimal", "Money" },
 			new string[] { "String", "Single", "Double", "Boolean" });
 
-		ConvertTo(new[] { "Decimal?", "SqlDecimal", "SqlMoney" }, "p == null || p.Length == 0 ? {2} : ToDecimal(p)", "Byte[]", "Binary");
+		ConvertTo(new[] { "Decimal?", "SqlDecimal", "SqlMoney" }, "p == null || p.Length == 0 ? {2} : ToDecimal(p)", "Byte[]");
 
 		// To Double
 		//
@@ -241,7 +234,6 @@ namespace BLToolkit.Common
 		ConvertFrom("SqlGuid",   "p.IsNull  ? {2} : p.Value",               "Guid", "Guid?", "SqlGuid");
 		ConvertFrom("SqlString", "p.IsNull  ? {2} : new Guid(p.Value)",     "Guid", "Guid?", "SqlGuid");
 		ConvertFrom("SqlBinary", "p.IsNull  ? {2} : p.ToSqlGuid().Value",   "Guid", "Guid?", "SqlGuid");
-		ConvertFrom("Binary",    "p == null ? {2} : new Guid(p.ToArray())", "Guid", "Guid?", "SqlGuid");
 		ConvertFrom("Type",      "p == null ? {2} : p.GUID",                "Guid", "Guid?", "SqlGuid");
 
 		// To Int16
@@ -289,7 +281,6 @@ namespace BLToolkit.Common
 			new string[] { "String", "Byte", "Int16", "Int32", "Int64", "Single", "Double", "Decimal", "Money", "Boolean" });
 
 		ConvertFrom("Byte[]", "p == null || p.Length == 0 ? {2} : checked(({0})p[0])",           "SByte", "SByte?");
-		ConvertFrom("Binary", "p == null || p.Length == 0 ? {2} : checked(({0})p.ToArray()[0])", "SByte", "SByte?");
 
 		// To Single
 		//
@@ -309,7 +300,6 @@ namespace BLToolkit.Common
 
 		ConvertTo(new[] { "String", "SqlString" }, "p == null ? {2} : p.FullName",                                          "Type");
 		ConvertTo(new[] { "String", "SqlString" }, "p == null ? {2} : System.Text.Encoding.UTF8.GetString(p, 0, p.Length)", "Byte[]");
-		ConvertTo(new[] { "String", "SqlString" }, "To{0}(p.ToArray())",                                                    "Binary");
 
 		ConvertTo(new[] { "String", "SqlString" }, "p.To{0}()",
 			Sql("String", "Byte", "Int16", "Int32", "Int64", "Single", "Double", "Decimal", "Money", "Boolean", "Guid"));
@@ -340,7 +330,6 @@ namespace BLToolkit.Common
 		ConvertFrom("SqlInt64",        "p.IsNull   ? {2} : {3}.FromTicks(p.Value)",                             "TimeSpan", "TimeSpan?");
 		ConvertFrom("SqlDouble",       "p.IsNull   ? {2} : {3}.FromDays(p.Value)",                              "TimeSpan", "TimeSpan?");
 		ConvertFrom("Byte[]",          "p == null || p.Length == 0? {2} : {3}.FromTicks(ToInt64(p))",           "TimeSpan", "TimeSpan?");
-		ConvertFrom("Binary",          "p == null || p.Length == 0? {2} : {3}.FromTicks(ToInt64(p.ToArray()))", "TimeSpan", "TimeSpan?");
 
 		// To UInt16
 		//
@@ -369,7 +358,6 @@ namespace BLToolkit.Common
 		// To SqlBinary
 		//
 		ConvertTo("SqlBinary", "p", "Byte[]");
-		ConvertTo("SqlBinary", "p == null ?      {2} : p.ToArray()",                   "Binary");
 		ConvertTo("SqlBinary", "p == Guid.Empty? {2} : new SqlGuid(p).To{0}()",        "Guid");
 		ConvertTo("SqlBinary", "p.HasValue ? new SqlGuid(p.Value).ToSqlBinary(): {2}", "Guid?");
 		ConvertTo("SqlBinary", "p.To{0}()",                                            "SqlBytes" , "SqlGuid");
@@ -382,7 +370,6 @@ namespace BLToolkit.Common
 		ConvertTo("SqlXml", "p == null ? {2} : new {0}(new XmlTextReader(new StringReader(p.ToString())))",         "XElement");
 		ConvertTo("SqlXml", "p == null ? {2} : new {0}(new XmlTextReader(new StringReader(new string(p))))",        "Char[]");
 		ConvertTo("SqlXml", "p == null ? {2} : new {0}(new MemoryStream(p))",                                       "Byte[]");
-		ConvertTo("SqlXml", "p == null ? {2} : new {0}(new MemoryStream(p.ToArray()))",                             "Binary");
 		ConvertTo("SqlXml", "p.IsNull ? {2} : new {0}(new XmlTextReader(new StringReader(p.Value)))",               "SqlString");
 		ConvertTo("SqlXml", "p.IsNull ? {2} : new {0}(new XmlTextReader(new StringReader(p.ToSqlString().Value)))", "SqlChars");
 		ConvertTo("SqlXml", "p.IsNull ? {2} : new {0}(new MemoryStream(p.Value))",                                  "SqlBinary");
@@ -392,7 +379,6 @@ namespace BLToolkit.Common
 		// 
 		ConvertTo("Stream", "p == Guid.Empty ? {2} : new MemoryStream(p.ToByteArray())",  "Guid");
 		ConvertTo("Stream", "p == null ? {2} : new MemoryStream(p)",                      "Byte[]");
-		ConvertTo("Stream", "p == null ? {2} : new MemoryStream(p.ToArray())",            "Binary");
 		ConvertTo("Stream", "p.HasValue ? new MemoryStream(p.Value.ToByteArray()) : {2}", "Guid?");
 		ConvertTo("Stream", "p.IsNull ? {2} : p.Stream",                                  "SqlBytes");
 		ConvertTo("Stream", "p.IsNull ? {2} : new MemoryStream(p.Value)",                 "SqlBinary");
@@ -403,7 +389,6 @@ namespace BLToolkit.Common
 		ConvertTo("Type", "p == null ? {2} : Type.GetType(p)",                            "String");
 		ConvertTo("Type", "p == null ? {2} : Type.GetType(new string(p))",                "Char[]");
 		ConvertTo("Type", "p == null ? {2} : Type.GetTypeFromCLSID(ToGuid(p))",           "Byte[]");
-		ConvertTo("Type", "p == null ? {2} : Type.GetTypeFromCLSID(ToGuid(p.ToArray()))", "Binary");
 		ConvertTo("Type", "p == Guid.Empty ? {2} : Type.GetTypeFromCLSID(p)",             "Guid");
 		ConvertTo("Type", "p.HasValue ? Type.GetTypeFromCLSID(p.Value) : {2}",            "Guid?");
 		ConvertTo("Type", "p.IsNull ? {2} : Type.GetType(p.Value)",                       "SqlString");
@@ -417,7 +402,6 @@ namespace BLToolkit.Common
 		ConvertTo("Byte[]", "new[] {{ checked((Byte)p) }}",                            "SByte");
 		ConvertTo("Byte[]", "ToByteArray(p.ToBinary())",                               "DateTime");
 		ConvertTo("Byte[]", "ToByteArray(p.LocalDateTime.ToBinary())",                 "DateTimeOffset");
-		ConvertTo("Byte[]", "p == null ? {2} : p.ToArray()",                           "Binary");
 		ConvertTo("Byte[]", "ToByteArray(p.Ticks)",                                    "TimeSpan");
 		ConvertTo("Byte[]", "p == Guid.Empty ? {2} : p.ToByteArray()",                 "Guid");
 
@@ -434,7 +418,6 @@ namespace BLToolkit.Common
 		// To SqlBytes
 		//
 		ConvertTo("SqlBytes", "p == null ? {2} : new {0}(p)",                      "Byte[]", "Stream");
-		ConvertTo("SqlBytes", "p == null ? {2} : new {0}(p.ToArray())",            "Binary");
 		ConvertTo("SqlBytes", "p == Guid.Empty ? {2}: new {0}(p.ToByteArray())",   "Guid");
 		ConvertTo("SqlBytes", "p.HasValue ? new {0}(p.Value.ToByteArray()) : {2}", "Guid?");
 		ConvertTo("SqlBytes", "p.IsNull ? {2} : new {0}(p)",                       "SqlBinary");
@@ -473,10 +456,6 @@ namespace BLToolkit.Common
 		// From Byte[]
 		//
 		ConvertFrom("Byte[]", "p == null || p.Length == 0 ? {2} : BitConverter.To{3}(p, 0)",           Add(numberTypes1, numberTypes1n));
-
-		// From Binary
-		//
-		ConvertFrom("Binary", "p == null || p.Length == 0 ? {2} : BitConverter.To{3}(p.ToArray(), 0)", Add(numberTypes1, numberTypes1n));
 
 		Generate();
 #>

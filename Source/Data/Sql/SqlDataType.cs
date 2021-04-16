@@ -246,7 +246,6 @@ namespace BLToolkit.Data.Sql
 				case TypeCode.Object   :
 					if (underlyingType == typeof(Guid))           return Guid;
 					if (underlyingType == typeof(byte[]))         return ByteArray;
-					if (underlyingType == typeof(System.Data.Linq.Binary)) return LinqBinary;
 					if (underlyingType == typeof(char[]))         return CharArray;
 #if !MONO
 					if (underlyingType == typeof(DateTimeOffset)) return DateTimeOffset;

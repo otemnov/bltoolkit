@@ -251,9 +251,6 @@ namespace BLToolkit.Data
 			AddDataProvider(new Sql2005DataProvider());
 			AddDataProvider(new SqlDataProvider());
 			AddDataProvider(new Sql2000DataProvider());
-			AddDataProvider(new AccessDataProvider());
-			AddDataProvider(new OleDbDataProvider());
-			AddDataProvider(new OdbcDataProvider());
 
 			var section = BLToolkitSection.Instance;
 

@@ -1534,8 +1534,7 @@ namespace BLToolkit.Data.Sql.SqlProvider
 
 		public virtual bool IsValueBuildable(object value)
 		{
-			return !(value is System.Data.Linq.Binary)
-				&&!(value is byte[]);
+			return !(value is byte[]);
 		}
 
 		protected void BuildExpression(StringBuilder sb, int parentPrecedence, ISqlExpression expr, string alias, ref bool addAlias)

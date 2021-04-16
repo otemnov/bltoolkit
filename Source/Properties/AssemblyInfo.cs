@@ -1,7 +1,6 @@
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Security;
 using System.Resources;
 
 using BLToolkit;
@@ -36,14 +35,6 @@ using BLToolkit;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion    (BLToolkitConstants.FullVersionString)]
 [assembly: AssemblyFileVersion(BLToolkitConstants.FullVersionString)]
-
-// The AllowPartiallyTrustedCallersAttribute requires the assembly to be signed with a strong name key.
-// This attribute is necessary since the control is called by either an intranet or Internet
-// Web page that should be running under restricted permissions.
-#if !SILVERLIGHT
-[assembly: AllowPartiallyTrustedCallers]
-//[assembly: SecurityRules(SecurityRuleSet.Level2, SkipVerificationInFullTrust = true)]
-#endif
 
 [assembly: CLSCompliant(true)]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]

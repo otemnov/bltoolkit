@@ -297,7 +297,7 @@ namespace BLToolkit.Reflection.Emit
 		/// <returns>Returns the new Type object for this class.</returns>
 		public Type Create()
 		{
-			return TypeBuilder.CreateType();
+			return TypeBuilder.CreateTypeInfo();
 		}
 
 		/// <summary>

@@ -169,7 +169,7 @@ namespace BLToolkit.TypeBuilder
 				// _ModuleBuilder is the base type for both
 				// ModuleBuilder and InternalModuleBuilder classes.
 				//
-				if (!(type.Module is _ModuleBuilder) && type.Module.FullyQualifiedName != null && type.Module.FullyQualifiedName.IndexOf('<') < 0)
+				if (type.Module.FullyQualifiedName != null && type.Module.FullyQualifiedName.IndexOf('<') < 0)
 					assemblyDir = Path.GetDirectoryName(type.Module.FullyQualifiedName);
 #endif
 
@@ -314,13 +314,14 @@ namespace BLToolkit.TypeBuilder
 		{
 #if !SILVERLIGHT
 
-			if (originalAssembly is _AssemblyBuilder)
+			/*if (originalAssembly is _AssemblyBuilder)
 			{
 				// This is a generated assembly. Even if it has a valid Location,
 				// there is definitelly no extension assembly at this path.
 				//
 				return null;
 			}
+			*/
 
 			try
 			{
@@ -422,11 +423,11 @@ namespace BLToolkit.TypeBuilder
 					{
 						var a = ass[i];
 
-						if (!(
+						if (/*!(
 #if FW4
 							a.IsDynamic ||
 #endif
-							a is _AssemblyBuilder) &&
+							a is _AssemblyBuilder) &&*/
 							(a.CodeBase.IndexOf("Microsoft.NET/Framework") > 0 || a.FullName.StartsWith("System."))) continue;
 
 						type = a.GetType(typeName);

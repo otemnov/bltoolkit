@@ -2,13 +2,7 @@ using System;
 using System.Data.SqlTypes;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.ComponentModel;
 using BLToolkit.Data.Linq;
-
-#if !SILVERLIGHT && !DATA
-using BLToolkit.ComponentModel;
-#endif
-
 namespace BLToolkit.Reflection
 {
 	public abstract class MemberAccessor
@@ -23,22 +17,6 @@ namespace BLToolkit.Reflection
 
 		public MemberInfo   MemberInfo   { get; private set; }
 		public TypeAccessor TypeAccessor { get; private set; }
-
-#if !SILVERLIGHT && !DATA
-
-		private PropertyDescriptor _propertyDescriptor;
-		public  PropertyDescriptor  PropertyDescriptor
-		{
-			get
-			{
-				if (_propertyDescriptor == null)
-					_propertyDescriptor = new MemberPropertyDescriptor(TypeAccessor.OriginalType, Name);
-
-				return _propertyDescriptor;
-			}
-		}
-
-#endif
 
 		public virtual bool HasGetter { get { return false; } }
 		public virtual bool HasSetter { get { return false; } }
