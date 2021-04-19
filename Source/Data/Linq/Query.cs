@@ -1085,7 +1085,7 @@ namespace BLToolkit.Data.Linq
 					while (dr.Read())
 						return mapper(ctx, dataContext, dr, expr, parameters);
 
-				return Array<TE>.Empty.First();
+				return Array.Empty<TE>().First();
 			}
 			finally
 			{

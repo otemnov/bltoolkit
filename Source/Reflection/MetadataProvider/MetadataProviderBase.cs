@@ -318,7 +318,7 @@ namespace BLToolkit.Reflection.MetadataProvider
 
 		public virtual InheritanceMappingAttribute[] GetInheritanceMapping(Type type, TypeExtension typeExtension)
 		{
-			return Array<InheritanceMappingAttribute>.Empty;
+			return Array.Empty<InheritanceMappingAttribute>();
 		}
 
 		#endregion

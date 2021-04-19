@@ -510,13 +510,13 @@ namespace BLToolkit.Data.Linq.Builder
 					var name   = string.Format(attr.MethodName, names);
 
 					if (name != attr.MethodName)
-						expr = Expression.Call(mi.DeclaringType, name, Array<Type>.Empty);
+						expr = Expression.Call(mi.DeclaringType, name, Array.Empty<Type>());
 					else
 						expr = Expression.Call(mi.DeclaringType, name, args);
 				}
 				else
 				{
-					expr = Expression.Call(mi.DeclaringType, attr.MethodName, Array<Type>.Empty);
+					expr = Expression.Call(mi.DeclaringType, attr.MethodName, Array.Empty<Type>());
 				}
 
 				var call = Expression.Lambda<Func<LambdaExpression>>(Expression.Convert(expr, typeof(LambdaExpression)));

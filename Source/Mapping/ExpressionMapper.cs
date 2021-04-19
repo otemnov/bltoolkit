@@ -572,9 +572,9 @@ namespace BLToolkit.Mapping
 							Expression.Condition(
 								Expression.Equal(source, Expression.Constant(null)),
 								Expression.Constant(null),
-								Expression.Call(source, "ToString", Array<Type>.Empty)) as Expression
+								Expression.Call(source, "ToString", Array.Empty<Type>())) as Expression
 						:
-							Expression.Call(source, "ToString", Array<Type>.Empty);
+							Expression.Call(source, "ToString", Array.Empty<Type>());
 
 			if (!isDestScalar && !isSourceScalar)
 			{

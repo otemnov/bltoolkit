@@ -635,7 +635,7 @@ namespace BLToolkit.Reflection.MetadataProvider
 			var extList = typeExtension.Attributes["InheritanceMapping"];
 
 			if (extList == AttributeExtensionCollection.Null)
-				return Array<InheritanceMappingAttribute>.Empty;
+				return Array.Empty<InheritanceMappingAttribute>();
 
 			var attrs = new InheritanceMappingAttribute[extList.Count];
 

@@ -46,7 +46,7 @@ namespace BLToolkit.Mapping
 
 		public static string[] ParseKeys(string keys)
 		{
-			return keys == null ? Array<string>.Empty : keys.Replace(" ", "").Split(',');
+			return keys == null ? Array.Empty<string>() : keys.Replace(" ", "").Split(',');
 		}
 	}
 }

@@ -526,7 +526,7 @@ namespace BLToolkit.Data.Linq.Builder
 // ReSharper disable ConditionIsAlwaysTrueOrFalse
 // ReSharper disable HeuristicUnreachableCode
 						if (expr.Members == null)
-							return Array<SqlInfo>.Empty;
+							return Array.Empty<SqlInfo>();
 // ReSharper restore HeuristicUnreachableCode
 // ReSharper restore ConditionIsAlwaysTrueOrFalse
 
